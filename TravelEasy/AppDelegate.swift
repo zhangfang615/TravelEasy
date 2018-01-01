@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let discoverVC = DiscoverViewController()
         let messageVC = MessageViewController()
         let informationVC = InformationViewController()
-        
         searchVC.tabBarItem.image = UIImage(named: "toolicon.png")
         discoverVC.tabBarItem.image = UIImage(named: "toolicon.png")
         messageVC.tabBarItem.image = UIImage(named: "toolicon.png")

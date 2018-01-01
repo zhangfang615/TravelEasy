@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3528F7A1FF863A800324723 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528F791FF863A800324723 /* ViewController.swift */; };
+		83016F62F28656FD631DE984 /* Pods_TravelEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32147539514BF478A4DBA9F /* Pods_TravelEasy.framework */; };
 		C3528F801FF863A800324723 /* TravelEasy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3528F7E1FF863A800324723 /* TravelEasy.xcdatamodeld */; };
 		C3528F901FF863A800324723 /* TravelEasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528F8F1FF863A800324723 /* TravelEasyTests.swift */; };
 		C3528F9B1FF863A800324723 /* TravelEasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528F9A1FF863A800324723 /* TravelEasyUITests.swift */; };
@@ -28,6 +28,9 @@
 		C3528FCB1FF8668F00324723 /* MyWishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528FC21FF8668F00324723 /* MyWishViewController.swift */; };
 		C3528FCC1FF8668F00324723 /* SetJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528FC31FF8668F00324723 /* SetJourneyViewController.swift */; };
 		C3528FD01FF867AC00324723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528FCF1FF867AC00324723 /* AppDelegate.swift */; };
+		C3528FD61FF8A65C00324723 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528FD51FF8A65C00324723 /* config.swift */; };
+		C3528FD91FF8A71A00324723 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528FD81FF8A71A00324723 /* UserLoginViewController.swift */; };
+		C37642851FF9E68000329152 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37642841FF9E68000329152 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +52,6 @@
 
 /* Begin PBXFileReference section */
 		C3528F741FF863A800324723 /* TravelEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3528F791FF863A800324723 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3528F7F1FF863A800324723 /* TravelEasy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelEasy.xcdatamodel; sourceTree = "<group>"; };
 		C3528F861FF863A800324723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3528F8B1FF863A800324723 /* TravelEasyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelEasyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,12 @@
 		C3528FC21FF8668F00324723 /* MyWishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWishViewController.swift; sourceTree = "<group>"; };
 		C3528FC31FF8668F00324723 /* SetJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetJourneyViewController.swift; sourceTree = "<group>"; };
 		C3528FCF1FF867AC00324723 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3528FD51FF8A65C00324723 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		C3528FD81FF8A71A00324723 /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		C37642841FF9E68000329152 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D32147539514BF478A4DBA9F /* Pods_TravelEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DC3FE27DB4F69067B94257 /* Pods-TravelEasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelEasy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelEasy/Pods-TravelEasy.debug.xcconfig"; sourceTree = "<group>"; };
+		DCBC9D8878E169787F7EC7D2 /* Pods-TravelEasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelEasy.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelEasy/Pods-TravelEasy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83016F62F28656FD631DE984 /* Pods_TravelEasy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		508B7E7A3629E8429FF9CD6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D32147539514BF478A4DBA9F /* Pods_TravelEasy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3528F6B1FF863A800324723 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +126,8 @@
 				C3528F8E1FF863A800324723 /* TravelEasyTests */,
 				C3528F991FF863A800324723 /* TravelEasyUITests */,
 				C3528F751FF863A800324723 /* Products */,
+				DB30BBEB20D06CAF1A4361D7 /* Pods */,
+				508B7E7A3629E8429FF9CD6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,15 +144,12 @@
 		C3528F761FF863A800324723 /* TravelEasy */ = {
 			isa = PBXGroup;
 			children = (
-				C3528FB81FF8665B00324723 /* InformationControllers */,
+				C37642811FF9E4AD00329152 /* models */,
+				C37642801FF9E4A600329152 /* views */,
+				C376427F1FF9E49D00329152 /* controllers */,
+				C3528FD41FF8A61800324723 /* supporting files */,
 				C3528FB41FF865F300324723 /* Assets.xcassets */,
 				C3528FCF1FF867AC00324723 /* AppDelegate.swift */,
-				C3528FAD1FF8640D00324723 /* DiscoverViewController.swift */,
-				C3528FAC1FF8640D00324723 /* MessageViewController.swift */,
-				C3528FB61FF8664500324723 /* InformationViewController.swift */,
-				C3528FAA1FF8640D00324723 /* OrderViewController.swift */,
-				C3528FAB1FF8640D00324723 /* SearchViewController.swift */,
-				C3528F791FF863A800324723 /* ViewController.swift */,
 				C3528F861FF863A800324723 /* Info.plist */,
 				C3528F7E1FF863A800324723 /* TravelEasy.xcdatamodeld */,
 			);
@@ -175,6 +191,68 @@
 			path = InformationControllers;
 			sourceTree = "<group>";
 		};
+		C3528FD41FF8A61800324723 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C3528FD51FF8A65C00324723 /* config.swift */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
+		C376427F1FF9E49D00329152 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3528FB81FF8665B00324723 /* InformationControllers */,
+				C37642821FF9E54100329152 /* UserLoginControllers */,
+				C3528FAD1FF8640D00324723 /* DiscoverViewController.swift */,
+				C3528FAC1FF8640D00324723 /* MessageViewController.swift */,
+				C3528FB61FF8664500324723 /* InformationViewController.swift */,
+				C3528FAA1FF8640D00324723 /* OrderViewController.swift */,
+				C3528FAB1FF8640D00324723 /* SearchViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C37642801FF9E4A600329152 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C37642831FF9E55600329152 /* UserLoginViews */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C37642811FF9E4AD00329152 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		C37642821FF9E54100329152 /* UserLoginControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3528FD81FF8A71A00324723 /* UserLoginViewController.swift */,
+			);
+			path = UserLoginControllers;
+			sourceTree = "<group>";
+		};
+		C37642831FF9E55600329152 /* UserLoginViews */ = {
+			isa = PBXGroup;
+			children = (
+				C37642841FF9E68000329152 /* LoginView.swift */,
+			);
+			path = UserLoginViews;
+			sourceTree = "<group>";
+		};
+		DB30BBEB20D06CAF1A4361D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6DC3FE27DB4F69067B94257 /* Pods-TravelEasy.debug.xcconfig */,
+				DCBC9D8878E169787F7EC7D2 /* Pods-TravelEasy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3528F9F1FF863A800324723 /* Build configuration list for PBXNativeTarget "TravelEasy" */;
 			buildPhases = (
+				6D0CC9A16341748EA6855FE9 /* [CP] Check Pods Manifest.lock */,
 				C3528F701FF863A800324723 /* Sources */,
 				C3528F711FF863A800324723 /* Frameworks */,
 				C3528F721FF863A800324723 /* Resources */,
+				E7E03FEAAC3EB2F4417ECA9B /* [CP] Embed Pods Frameworks */,
+				42A0F06B52389CC9E0D9208B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,6 +383,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42A0F06B52389CC9E0D9208B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelEasy/Pods-TravelEasy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D0CC9A16341748EA6855FE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelEasy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7E03FEAAC3EB2F4417ECA9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelEasy/Pods-TravelEasy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelEasy/Pods-TravelEasy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3528F701FF863A800324723 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,6 +444,7 @@
 			files = (
 				C3528FCC1FF8668F00324723 /* SetJourneyViewController.swift in Sources */,
 				C3528FCA1FF8668F00324723 /* GuideApplicationViewController.swift in Sources */,
+				C3528FD61FF8A65C00324723 /* config.swift in Sources */,
 				C3528FC81FF8668F00324723 /* MyMomentsViewController.swift in Sources */,
 				C3528FC71FF8668F00324723 /* MyCalendarViewController.swift in Sources */,
 				C3528FC51FF8668F00324723 /* FriendListViewController.swift in Sources */,
@@ -317,13 +453,14 @@
 				C3528FB11FF8640D00324723 /* SearchViewController.swift in Sources */,
 				C3528FB21FF8640D00324723 /* MessageViewController.swift in Sources */,
 				C3528FBA1FF8668700324723 /* eWalletViewController.swift in Sources */,
+				C3528FD91FF8A71A00324723 /* UserLoginViewController.swift in Sources */,
 				C3528FC41FF8668F00324723 /* JourneyViewController.swift in Sources */,
 				C3528F801FF863A800324723 /* TravelEasy.xcdatamodeld in Sources */,
 				C3528FD01FF867AC00324723 /* AppDelegate.swift in Sources */,
 				C3528FCB1FF8668F00324723 /* MyWishViewController.swift in Sources */,
-				C3528F7A1FF863A800324723 /* ViewController.swift in Sources */,
 				C3528FB01FF8640D00324723 /* OrderViewController.swift in Sources */,
 				C3528FB71FF8664500324723 /* InformationViewController.swift in Sources */,
+				C37642851FF9E68000329152 /* LoginView.swift in Sources */,
 				C3528FC61FF8668F00324723 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +606,7 @@
 		};
 		C3528FA01FF863A800324723 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DC3FE27DB4F69067B94257 /* Pods-TravelEasy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +622,7 @@
 		};
 		C3528FA11FF863A800324723 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBC9D8878E169787F7EC7D2 /* Pods-TravelEasy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
