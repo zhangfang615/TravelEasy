@@ -31,6 +31,10 @@ class InformationViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: InformationViewController.cellIdentifier)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 4
     }
@@ -79,7 +83,11 @@ class InformationViewController: UIViewController, UITableViewDelegate, UITableV
         myCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         switch (indexPath.section) {
         case 0:
-            myCell.textLabel?.text = "NA"
+            if (isLogin == true){
+                myCell.textLabel?.text = "已登录"
+            }else{
+                myCell.textLabel?.text = "未登录"
+            }
         case 1:
             myCell.textLabel?.text = section1[indexPath.row]
             
@@ -109,62 +117,131 @@ class InformationViewController: UIViewController, UITableViewDelegate, UITableV
         case 1:
             switch (indexPath.row){
             case 0:
+                if (isLogin == true){
                 let destination = eWalletViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             case 1:
+                if (isLogin == true){
                 let destination = JourneyViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             default:
+                if (isLogin == true){
                 let destination = SetJourneyViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             }
         case 2:
             switch (indexPath.row){
             case 0:
+                if (isLogin == true){
                 let destination = FriendListViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             case 1:
+                if (isLogin == true){
                 let destination = MyMomentsViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             case 2:
+                if (isLogin == true){
                 let destination = MyWishViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             default:
+                if (isLogin == true){
                 let destination = MyCommentsViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
-
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             }
         default:
             switch (indexPath.row) {
             case 0:
+                if (isLogin == true){
                 let destination = MyCalendarViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             case 1:
+                if (isLogin == true){
                 let destination = SettingsViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             default:
+                if (isLogin == true){
                 let destination = GuideApplicationViewController()
                 destination.hidesBottomBarWhenPushed = true
                 destination.title = tableView.cellForRow(at: indexPath)?.textLabel?.text
                 navigationController?.pushViewController(destination, animated: true)
+                }
+                else{
+                    let destination = UserLoginViewController()
+                    destination.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(destination, animated: true)
+                }
             }
         }
         
