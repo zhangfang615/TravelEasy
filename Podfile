@@ -4,6 +4,8 @@ use_frameworks!
 
 target 'TravelEasy' do
     pod 'SnapKit', '~> 4.0.0'
+    pod 'Toast-Swift', '~> 3.0.1'
+    pod 'CountryPickerView'
 end
 
 workspace 'TravelEasy.xcodeproj'

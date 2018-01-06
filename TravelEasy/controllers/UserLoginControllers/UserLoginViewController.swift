@@ -30,12 +30,12 @@ class UserLoginViewController: UIViewController {
     @objc func loginEvent () {
         self.navigationController?.popViewController(animated: true)
         isLogin = true
-        print("==========")
     }
     
+    
     @objc func registerEvent(textFd :UITextField )   {
-        
-        print("------------")
+        let registerVC = RegisterPhoneViewController()
+        self.navigationController?.pushViewController(registerVC, animated: true)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
