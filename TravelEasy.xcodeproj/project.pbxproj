@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		83016F62F28656FD631DE984 /* Pods_TravelEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32147539514BF478A4DBA9F /* Pods_TravelEasy.framework */; };
+		C35025E71FFAE0CC00A317C2 /* RegisterPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35025E61FFAE0CC00A317C2 /* RegisterPhoneViewController.swift */; };
+		C35025E91FFAE16100A317C2 /* RegisterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35025E81FFAE16100A317C2 /* RegisterPhoneView.swift */; };
 		C3528F801FF863A800324723 /* TravelEasy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3528F7E1FF863A800324723 /* TravelEasy.xcdatamodeld */; };
 		C3528F901FF863A800324723 /* TravelEasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528F8F1FF863A800324723 /* TravelEasyTests.swift */; };
 		C3528F9B1FF863A800324723 /* TravelEasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3528F9A1FF863A800324723 /* TravelEasyUITests.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C35025E61FFAE0CC00A317C2 /* RegisterPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneViewController.swift; sourceTree = "<group>"; };
+		C35025E81FFAE16100A317C2 /* RegisterPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneView.swift; sourceTree = "<group>"; };
 		C3528F741FF863A800324723 /* TravelEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3528F7F1FF863A800324723 /* TravelEasy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelEasy.xcdatamodel; sourceTree = "<group>"; };
 		C3528F861FF863A800324723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 		C376427F1FF9E49D00329152 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C37642861FFADA9D00329152 /* UserRegisterControllers */,
 				C3528FB81FF8665B00324723 /* InformationControllers */,
 				C37642821FF9E54100329152 /* UserLoginControllers */,
 				C3528FAD1FF8640D00324723 /* DiscoverViewController.swift */,
@@ -216,6 +221,7 @@
 		C37642801FF9E4A600329152 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C37642871FFADAC200329152 /* UserRegisterViews */,
 				C37642831FF9E55600329152 /* UserLoginViews */,
 			);
 			path = views;
@@ -242,6 +248,22 @@
 				C37642841FF9E68000329152 /* LoginView.swift */,
 			);
 			path = UserLoginViews;
+			sourceTree = "<group>";
+		};
+		C37642861FFADA9D00329152 /* UserRegisterControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C35025E61FFAE0CC00A317C2 /* RegisterPhoneViewController.swift */,
+			);
+			path = UserRegisterControllers;
+			sourceTree = "<group>";
+		};
+		C37642871FFADAC200329152 /* UserRegisterViews */ = {
+			isa = PBXGroup;
+			children = (
+				C35025E81FFAE16100A317C2 /* RegisterPhoneView.swift */,
+			);
+			path = UserRegisterViews;
 			sourceTree = "<group>";
 		};
 		DB30BBEB20D06CAF1A4361D7 /* Pods */ = {
@@ -424,11 +446,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelEasy/Pods-TravelEasy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -454,7 +480,9 @@
 				C3528FB21FF8640D00324723 /* MessageViewController.swift in Sources */,
 				C3528FBA1FF8668700324723 /* eWalletViewController.swift in Sources */,
 				C3528FD91FF8A71A00324723 /* UserLoginViewController.swift in Sources */,
+				C35025E91FFAE16100A317C2 /* RegisterPhoneView.swift in Sources */,
 				C3528FC41FF8668F00324723 /* JourneyViewController.swift in Sources */,
+				C35025E71FFAE0CC00A317C2 /* RegisterPhoneViewController.swift in Sources */,
 				C3528F801FF863A800324723 /* TravelEasy.xcdatamodeld in Sources */,
 				C3528FD01FF867AC00324723 /* AppDelegate.swift in Sources */,
 				C3528FCB1FF8668F00324723 /* MyWishViewController.swift in Sources */,

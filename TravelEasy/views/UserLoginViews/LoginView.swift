@@ -27,9 +27,6 @@ class LoginView: UIView {
     {
         
         super.init(frame: frame)
-        
-        
-        
         self.backgroundColor = UIColor .red
         
         creatNameTextfiled()
