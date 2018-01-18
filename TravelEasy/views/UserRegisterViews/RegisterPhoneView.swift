@@ -117,6 +117,7 @@ class RegisterPhoneView: UIView {
         verificationTextField.backgroundColor = UIColor.white
         verificationTextField.tag = 3
         verificationTextField.isUserInteractionEnabled = false
+        verififyPwdRegisterTextField.rightView = getVerificationCodeLabel
         verififyPwdRegisterTextField.showDoneButtonOnKeyboard()
         self.addSubview(verificationTextField)
     }

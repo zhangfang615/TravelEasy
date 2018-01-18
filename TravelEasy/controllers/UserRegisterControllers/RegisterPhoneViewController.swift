@@ -9,6 +9,7 @@
 import UIKit
 import Toast_Swift
 import CountryPickerView
+import Foundation
 
 class RegisterPhoneViewController: UIViewController {
     
@@ -21,6 +22,7 @@ class RegisterPhoneViewController: UIViewController {
     var isEligiblePWD: Bool = false
     var usePhoneNumber : Bool = true
     var verificationNumber : String? = Optional.none
+    var verificationCode : String? = Optional.none
     let verificationCodeLength = 6
     var countdownTimer: Timer?
     var toastStyle = ToastStyle()
@@ -150,6 +152,7 @@ class RegisterPhoneViewController: UIViewController {
     
     @objc func touchTextField(textField: UITextField) {
 //        textField.becomeFirstResponder()
+        
         if(currentTextField == nil) {
         currentTextField = textField.tag
         } else if (currentTextField != textField.tag){
@@ -208,6 +211,7 @@ class RegisterPhoneViewController: UIViewController {
             print("return 收回键盘3")
             verificationNumber = self.registerPhoneV.verificationTextField.text?.count == 0 ? Optional.none : self.registerPhoneV.verificationTextField.text
         }
+        
         currentTextField = Optional.none
     }
     
@@ -238,6 +242,7 @@ class RegisterPhoneViewController: UIViewController {
                 verificationNumber = self.registerPhoneV.verificationTextField.text?.count == 0 ? Optional.none : self.registerPhoneV.verificationTextField.text
                 }
         }
+       
         sender.cancelsTouchesInView = false
         currentTextField = Optional.none
         }
@@ -278,6 +283,7 @@ class RegisterPhoneViewController: UIViewController {
         //Todo: phonenumber of email is eligible?
         //Todo: Generate verification number
         //Todo: send verification code
+        verificationCode = Optional.none
         if(currentTextField != nil){
         if (currentTextField! == 0){
                 self.registerPhoneV.phoneNumberTextField.resignFirstResponder()
@@ -335,9 +341,26 @@ class RegisterPhoneViewController: UIViewController {
                 self.registerPhoneV.verificationTextField.isUserInteractionEnabled = true
                 self.registerPhoneV.verificationTextField.text = Optional.none
                 isCounting = true
+                let emailVerifyUrl = urlString!.appendingPathComponent(urlEmailVerification).appendingPathComponent(registerEmail!)
+                let request = URLRequest(url: emailVerifyUrl as URL)
+                do {
+                    // Perform the request
+                    var response: AutoreleasingUnsafeMutablePointer<URLResponse?>? = nil
+                    do {
+                        let data = try NSURLConnection.sendSynchronousRequest(request, returning: response)
+                        let jsonSerialized = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+                        verificationCode = jsonSerialized!["verificationCode"]! as! String
+                        print(verificationCode)
+                    }
+                    catch{
+                        print("wrong")
+                    }
+                }
+                
             }
             }
     }
+    
     
 
     
@@ -348,6 +371,8 @@ class RegisterPhoneViewController: UIViewController {
         let verifyPWD = self.registerPhoneV.verififyPwdRegisterTextField.text
         print("\(self.cp.selectedCountry.name)")
         print("\(self.cp.selectedCountry.phoneCode)")
+        
+
         if (usePhoneNumber == true && (phoneNumber?.count == 0 || !isValidPhoneNumber(phoneNumberStr: phoneNumber!))){
                 self.view.makeToast("请输入有效电话号码", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
                     if didTap {
@@ -391,8 +416,40 @@ class RegisterPhoneViewController: UIViewController {
                     print("completion without tap")
                 }
             }
-        }else{
-            print("Register")
+        }else if (verificationNumber! != verificationCode!){
+            self.view.makeToast("验证码不正确，请重新输入", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
+                if didTap {
+                    print("completion from tap")
+                } else {
+                    print("completion without tap")
+                }
+            }
+        }
+        else{
+            var isRegistered : String
+            if(usePhoneNumber == true){
+                isRegistered = phoneRegister(userPhone: phoneNumber!, registerPassword: passwordStr!)
+            } else{
+                isRegistered = emailRegister(userEmail: phoneNumber!, registerPassword: passwordStr!)
+            }
+            if (isRegistered == "registered") {
+                self.view.makeToast("成功注册， 返回登录页面", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
+                    if didTap {
+                        print("completion from tap")
+                    } else {
+                        print("completion without tap")
+                    }
+                }
+                self.navigationController?.popViewController(animated: true)
+            }else {
+                self.view.makeToast(isRegistered, duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
+                    if didTap {
+                        print("completion from tap")
+                    } else {
+                        print("completion without tap")
+                    }
+                }
+            }
         }
     }
     override func didReceiveMemoryWarning() {
@@ -417,7 +474,61 @@ class RegisterPhoneViewController: UIViewController {
             return false
         }
     }
+    
+    func phoneRegister(userPhone:String, registerPassword:String) -> String
+    {
 
+        let request = NSMutableURLRequest(url:urlString!.appendingPathComponent("phoneRegister"))
+        let body = "user_name=\(userPhone)&user_password=\(registerPassword)"
+        //编码POST数据
+        let postData = body.data(using: String.Encoding.utf8)
+        //保用 POST 提交
+        request.httpMethod = "POST"
+        request.httpBody = postData
+        
+        //响应对象
+//        var response:URLResponse?
+        var response: AutoreleasingUnsafeMutablePointer<URLResponse?>? = nil
+        do{
+            //发出请求
+            let data = try NSURLConnection.sendSynchronousRequest(request as URLRequest, returning: response)
+            let jsonSerialized = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+            return "registered"
+//            verificationCode = jsonSerialized!["user_name"]! as! String
+//            print(verificationCode)
+        }catch let error as NSError{
+//            //打印错误消息
+//            print(error.code)
+            return error.description
+        }
+    }
+    
+    func emailRegister(userEmail:String, registerPassword:String) -> String
+    {
+        
+        let request = NSMutableURLRequest(url:urlString!.appendingPathComponent("emailRegister"))
+        let body = "user_name=\(userEmail)&user_password=\(registerPassword)"
+        //编码POST数据
+        let postData = body.data(using: String.Encoding.utf8)
+        //保用 POST 提交
+        request.httpMethod = "POST"
+        request.httpBody = postData
+        
+        //响应对象
+        //        var response:URLResponse?
+        var response: AutoreleasingUnsafeMutablePointer<URLResponse?>? = nil
+        do{
+            //发出请求
+            let data = try NSURLConnection.sendSynchronousRequest(request as URLRequest, returning: response)
+            let jsonSerialized = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+//            verificationCode = jsonSerialized!["user_name"]! as! String
+            return "registered"
+        }catch let error as NSError{
+//            //打印错误消息
+//            print(error.code)
+            return error.description
+        }
+    }
 }
 
 
