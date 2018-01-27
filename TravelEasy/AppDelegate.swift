@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
+        loadTravelEasyUser()
         
         let searchVC = SearchViewController()
         let discoverVC = DiscoverViewController()
@@ -109,6 +110,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
+    func loadTravelEasyUser(){
+        if let userIdString = UserDefaults.standard.string(forKey: "TravelEasyUserId"){
+            let userId : Int? = Int(userIdString)
+            travelEasyUser.setUserId(newUserId: userId!)
+        }
+        travelEasyUser.setUserName(newUserName: UserDefaults.standard.string(forKey: "TravelEasyUserName"))
+        travelEasyUser.setLoginName(newLoginName: UserDefaults.standard.string(forKey: "TravelEasyUserLoginName"))
+        travelEasyUser.setToken(userToken: UserDefaults.standard.string(forKey: "TravelEasyToken"))
+    }
 }
 
