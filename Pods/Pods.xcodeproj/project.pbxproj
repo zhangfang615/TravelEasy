@@ -7,85 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02E80AC32A704EFA1D0A8B2610D8EE75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
-		034FBCA3DB5DCA03FA846FD515D0E982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		0F34F973578FBB35AE9BE9BE65197CE6 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 1636109D786740BE1B48214135290874 /* Data */; };
-		18048824FF5A6291FD3C1E880CA02FBC /* Images in Resources */ = {isa = PBXBuildFile; fileRef = CE7EE6E897240B2A5EE97C5E425FCB1F /* Images */; };
-		1BEB36E19946A2A5CE8BD3D9C9BA91E8 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F0C347981F57E37BB30B8BD0F50AA /* ConstraintLayoutGuide+Extensions.swift */; };
-		1DD5D5FFB10537799AD0D494F38C69CB /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F82611B6F4531FC5D51A1FE7DC6F22 /* NibView.swift */; };
-		26D44B2C5EDDE7753184F0A034EE2A25 /* CountryPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3579CBA72613F69DF7B286DE3E57A276 /* CountryPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28AA40D3E4CF486FAEE64C636FAE2624 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C24B792C0154E42A693CC3FCF45A6DFB /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28EA16E83CA17D0AFE05C44EFE2A931B /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8178B5D30D5FBEE8D32F8EC06994BE35 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		368A3AA259BEAE3600423024166123A8 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E535E6D58313C15FEFBB6F41AE52E /* ConstraintView+Extensions.swift */; };
-		3B29C3C9C110AE5FA9FDE8870476D68A /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE801B331CA15B2057303C4B3AC38C /* ConstraintInsets.swift */; };
-		3C72D1A15A23CF4FBF4CDC0EF9189B50 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858FEF97A5D80381B65410D1E575A8D /* ConstraintConstantTarget.swift */; };
-		4581DDF2293F3996D4B8D13DBF5B2BEF /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A491AD1A41D03A56391F70399690B8 /* LayoutConstraintItem.swift */; };
-		4D1EA3D4FDF4E6930DF99515971648FB /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FED57ABF6D70EC7D4BD7B660D0BC0F8 /* ConstraintMakerRelatable.swift */; };
-		52B7C0252CC03294B101760C62E5F71A /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B550936DB12AE7D60A1F7CCE7974ABF /* ConstraintViewDSL.swift */; };
-		59835BD798A6824A265032C5C694273A /* CountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0F055869512768512295EFA3120B4 /* CountryPickerViewController.swift */; };
-		5AC3521F4903EC2375CE7A57E854FA3B /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3C11138CB1A5917A8D289FB32C2534 /* ConstraintMakerEditable.swift */; };
-		5ACFAE0E8073FAB09192B3A7DD9B8A51 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DA3176A648F26CF7B830D7D9E39F7B /* ConstraintDescription.swift */; };
-		5CE59A02D02CE7269CE6B0AE33A4FBB9 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D341E10F0DC58D8EF6868AFDE36AF5 /* ConstraintMultiplierTarget.swift */; };
-		5CFA21B8B84A386A2FBBB26B58B51F9D /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823955569315C1BCD0F3D80F06935930 /* ConstraintAttributes.swift */; };
-		610FF1AB3747841C97D7B7EE99C1F0C1 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479926DFA408D886D26873700F96DF3 /* ConstraintPriority.swift */; };
-		66F7FA7B011C2B905FDAA38FA5BDBBD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		6ACCEA4FA99B3FE4EB74C101C55843AD /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A445AC6A91E957112BA821092D1AE /* ConstraintMakerPriortizable.swift */; };
-		6FEE6219C6FA3714C996AF2BD4FF3303 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C62525DFF456AFCCC94700E8361CD8 /* ConstraintRelatableTarget.swift */; };
-		78C10DD7FEB5D567CA8533C6D056FF7A /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEEA39BA68C3908D8EE1F76CE322999 /* ConstraintView.swift */; };
-		83E6870EE0C594EC0081558B082F4DC4 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29369B9CEAC4277E989AE103FE1323 /* Typealiases.swift */; };
-		8A0C0F09E55CB7DA3825488E2649172C /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E6A35DA301157BD7655C01A1AAC73 /* ConstraintOffsetTarget.swift */; };
-		8D0E5A29AFFFC9C3436A879345B719BE /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E9AC8EF9A07051FC80BB6413C1FB9 /* ConstraintConfig.swift */; };
-		8DE8FD45E3C85993CFE9A72B109FB687 /* CountryPickerView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 561B90761A15F255203FF3892871ED3E /* CountryPickerView.xib */; };
-		903037E53D91B60B564F31FD73C27E34 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8D913F91D6212370A320EB60B6D20 /* ConstraintMakerExtendable.swift */; };
-		93AADBBA87C3AFBEF7A03C1B9D5FC434 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2536823327F96D1CF107BD10607CCF5C /* Toast.swift */; };
-		9464A4B7DC9276A0C607802B3A083AFF /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D034DF11F68E6FFD4535A2D9522952D /* CountryPickerView.swift */; };
-		A73B71D811A34BA1F57A956A1A940BFE /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C1597CD31B68ACD87D5B207E2EA902 /* Toast-Swift-dummy.m */; };
-		A89F23383FCFAAEC8B08EC66FCFBBE64 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC82C132BE77774C1A8CDFFF43B873 /* ConstraintLayoutSupport.swift */; };
-		AB55B993FC38387A872CA7A6BC9AF364 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		AE7A596F4960031AE3AC244A249CCBDD /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F903C8E67BB7F34003DD28A93CDA6 /* Debugging.swift */; };
-		AEDF28D825F86A3D92370B2BA7F029D1 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D339898D4AA898BD4C741C3CE605EAE /* ConstraintDSL.swift */; };
-		B015D552EF14D44BB26F50E2BA77CA85 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D6359ED973FADEE858C2E6D36A9A3D /* UILayoutSupport+Extensions.swift */; };
-		B49FD340FD6FBAE46099B49E310ECDEB /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E340EDCF658A9C8016B6D9E3A2F80 /* ConstraintMaker.swift */; };
-		C184118ADE03F5C5AA67DA1A535903AF /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC91518579B17681FCAE4157B7D7 /* ConstraintLayoutGuide.swift */; };
-		CA1247339616F3A5EBF9901268177592 /* CountryPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E67FDC6660B5F8C1E85E81C615FCC4F0 /* CountryPickerView-dummy.m */; };
-		CB2DFCF381D4F51522C3B32D5C7ECB5A /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8612A729D2ADDF755BD6A3A7231BDE5 /* ConstraintMakerFinalizable.swift */; };
-		CD4884950EB5639F7677D50C0FC3CAB1 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0E97F6A8185A20FB9BD056472086B /* LayoutConstraint.swift */; };
-		CECFA1A06449F15E2CBFE081B090C4C6 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF73B2247F93B845DF7A934CD3497BE /* ConstraintRelation.swift */; };
-		D06C2F5860480319192BE32488FD40BA /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A20471FF6BA4A9315586FD6EB2C342 /* ConstraintLayoutSupportDSL.swift */; };
-		DCF35765DBD3FF0ED1E9EDC4D4DAD1C2 /* Pods-TravelEasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DBFFA75B19B6B7726731D14BD8D525 /* Pods-TravelEasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0311E5F8AABEB7B5550F3F24B7D72F48 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DD7E402BC6F9C8E445325C4410C1D9 /* ConstraintRelatableTarget.swift */; };
+		0369A5FE37FAE4E7E45CB54BB81D1514 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C6DD4240E054FD7A2124246D90D4E5 /* ConstraintLayoutSupport.swift */; };
+		04048AE20991947DE67B0632B1CBCCD4 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B460FC664C50F2F06025E73A3A124811 /* ConstraintViewDSL.swift */; };
+		0B444A824225426EDC12E26D3C4FD133 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20FCA355E94C4EA46C427CC71561A05 /* ConstraintMakerPriortizable.swift */; };
+		0F34F973578FBB35AE9BE9BE65197CE6 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = F729EE5AB22A24F40739C679936274CA /* Data */; };
+		1168760F142E397761694101E1E9D010 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100C14ADB74A1937E261BE9ED3BD314A /* Debugging.swift */; };
+		14AF5546C2EA5E05C55E89EEFCFC3600 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 367378470787183BD1BBB03321BACBD7 /* SnapKit-dummy.m */; };
+		17DC259E711708242DE90511CE1975F0 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6995115C2564BC183351F2A5F5E93B74 /* ConstraintLayoutGuide+Extensions.swift */; };
+		18048824FF5A6291FD3C1E880CA02FBC /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 0110DBD03B5ACD6AE29B6A5DA7AA1229 /* Images */; };
+		1D43A16F68E573F8A33795D57038A4FE /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33F952AE3743AD355382A50BD181639 /* UILayoutSupport+Extensions.swift */; };
+		1DD5D5FFB10537799AD0D494F38C69CB /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353CD4AE2F3278E6337C312E56D5EF50 /* NibView.swift */; };
+		224B0755EB50ADD7841404025C044A0B /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F13817AB0FDEA1338C8633DA4EBFB91 /* KaedeTextField.swift */; };
+		24A32419CB2E07735109EB99911596D2 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478D22B2CEDFF1C8FF93D60EC400C7C /* JiroTextField.swift */; };
+		26D44B2C5EDDE7753184F0A034EE2A25 /* CountryPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7820929FDA807D23B90D6C88978C839D /* CountryPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C431A80F8E5A55E428488D30499E36 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958E17B80223D7365587FC036F2832E /* HoshiTextField.swift */; };
+		283B8804BFA2F30C39F1DF0426D63A4D /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AAF9F181A8A305FE56ECB582409985 /* MinoruTextField.swift */; };
+		29AE3F4E3EB1AD093EA2BC5D4D877E0C /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 729D1C5BC3476A8DFB3E74A850D4FA6B /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3358FE65623B759877DA564287A1FF74 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365DE75429F2B074D0ED0A4DBD75B02 /* ConstraintInsets.swift */; };
+		42826CBF9E7AF37C66B9AE3ABF1A0711 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72639FFADD1B63EA62AD3C22ABC82F1F /* ConstraintMakerFinalizable.swift */; };
+		42F45540DC199852BAB95343436B3337 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8BC7B4E6284CFEFC076184A2C704F /* Constraint.swift */; };
+		46EB8534BA57A46951BD4D94C5DDB12F /* Pods-TravelEasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BEC5FABD5F0CFBB6F5E8E81B932BD /* Pods-TravelEasy-dummy.m */; };
+		4BFBCE0408E88ADE233A429DD3FDD004 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32E2213FC7F211308B818E2D166F5E /* ConstraintLayoutSupportDSL.swift */; };
+		4C11BD7AFEB8CF5D75DFD3E853A7A9D3 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80BA0D0D8DAE4AFF94DFE1DF0947D1 /* ConstraintLayoutGuide.swift */; };
+		4C452BC8CB84D9931E655A51980F19F5 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 455A421F2BCD11CA16B48B0F5BE88FB1 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CD4BA7A9A7CFF72028A1F765A50085E /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C7883EB167FBC0C220E78F8CD67007 /* LayoutConstraintItem.swift */; };
+		5577F2BB85D7B2D0FDD00DD1CA04029A /* Pods-TravelEasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DBFFA75B19B6B7726731D14BD8D525 /* Pods-TravelEasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55FE4D67E52C7EC3F169548A1AF8083E /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C31FEA0AA3A3A19DC4926CA2FA13E2 /* ConstraintItem.swift */; };
+		58C1DA764B0EDEE8823943A7C41DB75B /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E96394F47540B3811C7A91CC40215 /* ConstraintLayoutGuideDSL.swift */; };
+		59835BD798A6824A265032C5C694273A /* CountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9858C056022B342034CBA96439585C /* CountryPickerViewController.swift */; };
+		62671DCA8DE36EB1D8B0C19B6760C319 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0012FE67EDDC4D9A880859D39B5B24E /* ConstraintOffsetTarget.swift */; };
+		67AFA08000D8CB1C1680C7BB3174B6EA /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A0C31262749F291EB051C02DE2242E /* ConstraintMultiplierTarget.swift */; };
+		6BB36684E8AD12E34C6CD24FDC87B06A /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99546C2B35089BCA276465D1FB83BCC /* ConstraintPriority.swift */; };
+		70BB1250DB0C9B82C178F2321335779C /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51DC7BE6B945810CB4378FEECAA824B /* ConstraintConfig.swift */; };
+		74ACC4A7EC72542A67CC85919864EB2E /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CD335B2FD8A1A62AB16E5B6E1BB53 /* ConstraintConstantTarget.swift */; };
+		7648882A45D670C33F0BB70774849F27 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECF7872B5B2BF914F926E688BC5A3D /* ConstraintMakerExtendable.swift */; };
+		77DAEFF2E83AA6F62253CFBD83160E3A /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9DF8CA58BB6F4A161A1060DE37CBCE /* ConstraintMakerRelatable.swift */; };
+		795897C1B94E99CC94567C07F8AC27FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
+		7B649537E24F74B17185A1F44FC39DCD /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EEAA5B7B36E539F9C988FA6883B07F /* ConstraintAttributes.swift */; };
+		7EACE1670BB5AD4321D4D0DF9080E88D /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81320FC9F0F9BD898E921A677E6C926D /* Toast-Swift-dummy.m */; };
+		843E85CD16AFE0EF073E47E6DFB273A0 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65F61C02F60A34C9FB308C1EEB355A /* MadokaTextField.swift */; };
+		8C4CBB3D0CF0B2A84B6D662C3E405A73 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FCB821E9A287DE008F820D80FD381 /* ConstraintDescription.swift */; };
+		8CF91A6E86BFDB712E0093CBC6CBF4EC /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE19D26827873D368BF92B52594FAE1 /* Toast.swift */; };
+		8D7D57D72E55264B63089B678E3817D9 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038503B3C9510992057CA624C3E417C /* YokoTextField.swift */; };
+		8DE8FD45E3C85993CFE9A72B109FB687 /* CountryPickerView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F0BEC77CC650111F882F1CE8B9C6C /* CountryPickerView.xib */; };
+		93C0985EBFF42A460C787A0AF8AACEEE /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6BE251209FD90E2555123FB569F79C /* TextFieldEffects-dummy.m */; };
+		9464A4B7DC9276A0C607802B3A083AFF /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B6DBDE84BE8E722D645131834E16F8 /* CountryPickerView.swift */; };
+		973B2844EC1D22CC3722D7F21E000C49 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234BB9037784EBA8D864CD53F81AB4F /* ConstraintMaker.swift */; };
+		9ABDFC3BF5546282ABCD9F6FF197A6C7 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531150B8FC117D237316C19B4AB7508E /* ConstraintView+Extensions.swift */; };
+		9C79BD52DCFC3B65FCB131A01A22C8FA /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DA187EB42343CD006CB1752754C4E4 /* ConstraintInsetTarget.swift */; };
+		9DC180BC46E1C47E1EBFF82085ED633C /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D3D94E175CBA70118DA71B89ED5B6 /* AkiraTextField.swift */; };
+		A33218D49FB9285A6B226210D827264E /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7103954D99AFDE7A19EF4C4035E8647E /* ConstraintPriorityTarget.swift */; };
+		A39537F273A8222F4E6C4DD89CD805BF /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAD2503849FFB452BA3F2AC53FECAD /* ConstraintDSL.swift */; };
+		A92D23D536B2D4DE3EEB482AF9D2689E /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBCE370C876C0D45EEBAC16755C181D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4A3C380CDBF1F9A4AC4B931AA230167 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		B8EB24CC17A285F0331A254C04B08628 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18D99819439E8C99609DA70BB741E53 /* Typealiases.swift */; };
+		C5876DBABA5F7D36B93C814C538FF833 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10FC3E4D122ACE8D80C480F14A53DA /* YoshikoTextField.swift */; };
+		CA1247339616F3A5EBF9901268177592 /* CountryPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F9522E9FCF18D1FC25AB96FE39391B /* CountryPickerView-dummy.m */; };
+		CBF424964C9A76CBDED0193268644B13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		D2874D0B356BF10CAACA86B6963EF298 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DB94F02F3B1D7005CCFE152F125A03 /* TextFieldEffects.swift */; };
+		DA6570497B276A3026AA79BA7CE0EB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		DA9E30F20A5B744B9B172682813794F4 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CFB74C3BD7D637A822941187E41727 /* LayoutConstraint.swift */; };
+		DB8A39DDE8E68BF3DA70BEA9E13AB046 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EFD60B1F6E8E6684CAD2465CD8C4D9 /* ConstraintRelation.swift */; };
 		E05718D705B0DCFD1CB2F207CF69DAA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		E50A920ADCE801BBFBEBAE5E16830033 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85AA059C6E6094EB46DD749704B9FA /* Constraint.swift */; };
-		E8ED6560A7E133E2C84F6771B7008AE2 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6EF096B6C17F031A2782D915945D94 /* ConstraintLayoutGuideDSL.swift */; };
-		ED244DF878E4966DAC08C7FC71C865F3 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAF3C9F0284F29F50356E4217F06841 /* ConstraintInsetTarget.swift */; };
-		EF82C88E3014A214BE08B4659EBA06A5 /* CountryPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D1C4853AE2B5F0766281218E9258D7FD /* CountryPickerView.bundle */; };
-		F1CAB897F92E6F5B72978500031A58DF /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AEB4774ADE0DE9D7A746699DCB24F4 /* ConstraintItem.swift */; };
-		F5EBADB67C434E1E48C1907D74DFDD88 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52911D4EAA1392039954661433D3E4B9 /* Extensions.swift */; };
-		F74D64856ED9C74E3165D55224AB12A4 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7027F41704CCEACF9E3B1B185C5A0921 /* SnapKit-dummy.m */; };
-		F8FA6CB5DA544DE7CA4E6F38AA6D3C77 /* Pods-TravelEasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 296BEC5FABD5F0CFBB6F5E8E81B932BD /* Pods-TravelEasy-dummy.m */; };
-		FB21971798AF1A51C27A5918EA0AF26D /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62327A5A6C073ADCDFA5034AFAC704A4 /* ConstraintPriorityTarget.swift */; };
+		ECE4CFE7B36260C12AD656A69E9FCF1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		EEE4252736CBC1FD55380D106DC76737 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E489CB1C2AD0FFC5CD67AD5FE999945 /* IsaoTextField.swift */; };
+		F4A14CE172E882153532350CA5EE0694 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A028FE90510EA52E9470745ACCE23F /* ConstraintMakerEditable.swift */; };
+		F5EBADB67C434E1E48C1907D74DFDD88 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A542A1FF5CE01895378B17D6B6561F /* Extensions.swift */; };
+		FBD4B1CCF70464A5C72237D949267E15 /* CountryPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 08CB7AAE331B769B13CE25CABCAE34D1 /* CountryPickerView.bundle */; };
+		FD8E7D6D5781F58F5348A1425AB72342 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEC75D3370602E69A9020467A6309F /* ConstraintView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		13A9614091F7EDEC98190EE72171435C /* PBXContainerItemProxy */ = {
+		3C7FB1A4DE8B9D682DD805B3504F781A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C0B5FE11CEBD97B200CF3EB4EAE1AE2C;
-			remoteInfo = SnapKit;
+			remoteGlobalIDString = 3FF40C6D09BE664B90523DAB0880130D;
+			remoteInfo = TextFieldEffects;
 		};
-		2E26051FDBA0BC4E7D774A8F962A5E44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 040B8E3EBCFA1811FBEA305FEAB63CAA;
-			remoteInfo = "Toast-Swift";
-		};
-		4BE37758CCF1A84AF273F8DE992252E6 /* PBXContainerItemProxy */ = {
+		65223AC8F0008DBAF79BE494A2B93ACF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EE19F66CCC5A08D04AA4B1F58199A626;
 			remoteInfo = CountryPickerView;
+		};
+		9934CF937FA6C08AAB58B558C80CB80F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C66DE895EA2460B54BDA01F585D05171;
+			remoteInfo = "Toast-Swift";
+		};
+		EBA97BB7187A46F548618D628ED081F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244B3D889FA07C922C239E47C3D9B61D;
+			remoteInfo = SnapKit;
 		};
 		F763822A8B4FC3E9B1D08C8FC0936778 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -97,93 +117,110 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		007EF0F8676D805F1101F65366F72BA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02250C4C5DB2FFE5463A468CE8454E33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0479926DFA408D886D26873700F96DF3 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
-		088E340EDCF658A9C8016B6D9E3A2F80 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		0CEC82C132BE77774C1A8CDFFF43B873 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
-		103F903C8E67BB7F34003DD28A93CDA6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		0038503B3C9510992057CA624C3E417C /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		0110DBD03B5ACD6AE29B6A5DA7AA1229 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = CountryPickerView/Assets/CountryPickerView.bundle/Images; sourceTree = "<group>"; };
+		024E96394F47540B3811C7A91CC40215 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		05CFB74C3BD7D637A822941187E41727 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		08CB7AAE331B769B13CE25CABCAE34D1 /* CountryPickerView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CountryPickerView.bundle; path = "CountryPickerView-CountryPickerView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08EFD60B1F6E8E6684CAD2465CD8C4D9 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		08F9522E9FCF18D1FC25AB96FE39391B /* CountryPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountryPickerView-dummy.m"; sourceTree = "<group>"; };
+		0F13817AB0FDEA1338C8633DA4EBFB91 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		100C14ADB74A1937E261BE9ED3BD314A /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		135725F90A3E94DB9A29F108313CFBC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1602BB3F32457D7C9336BD6B66A6292F /* Pods-TravelEasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelEasy.release.xcconfig"; sourceTree = "<group>"; };
-		1636109D786740BE1B48214135290874 /* Data */ = {isa = PBXFileReference; includeInIndex = 1; name = Data; path = CountryPickerView/Assets/CountryPickerView.bundle/Data; sourceTree = "<group>"; };
-		18F82611B6F4531FC5D51A1FE7DC6F22 /* NibView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibView.swift; path = CountryPickerView/NibView.swift; sourceTree = "<group>"; };
 		1A606DDC9801F8F792F77131E46F8490 /* Pods-TravelEasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TravelEasy.modulemap"; sourceTree = "<group>"; };
+		1C3551D7C91000FE3634BCC40AC0E3B8 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		1DBCE370C876C0D45EEBAC16755C181D /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		1F58E8E11202E0CC4A960E2891D84A94 /* Pods-TravelEasy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelEasy-frameworks.sh"; sourceTree = "<group>"; };
-		209E9AC8EF9A07051FC80BB6413C1FB9 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
-		232A17A96B331E00502B6D223AC0ACB1 /* ResourceBundle-CountryPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CountryPickerView-Info.plist"; sourceTree = "<group>"; };
 		24C100D2CD5A4730F689374EC8DC0AB6 /* Pods-TravelEasy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelEasy-resources.sh"; sourceTree = "<group>"; };
-		2536823327F96D1CF107BD10607CCF5C /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
-		26D0E97F6A8185A20FB9BD056472086B /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		296BEC5FABD5F0CFBB6F5E8E81B932BD /* Pods-TravelEasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelEasy-dummy.m"; sourceTree = "<group>"; };
-		2D339898D4AA898BD4C741C3CE605EAE /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		2E5D362D1EEFCE61D5117AED61FEEEC6 /* CountryPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CountryPickerView.modulemap; sourceTree = "<group>"; };
-		2EDE801B331CA15B2057303C4B3AC38C /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		3579CBA72613F69DF7B286DE3E57A276 /* CountryPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerView-umbrella.h"; sourceTree = "<group>"; };
-		35D341E10F0DC58D8EF6868AFDE36AF5 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		3A1B3F0BACE7A5F5653E4C23F4DBC7AE /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
-		40D686E40BB208BEA46D1699B39153CA /* CountryPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerView-prefix.pch"; sourceTree = "<group>"; };
-		421F0C347981F57E37BB30B8BD0F50AA /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		469F2840AEED68FC18D16A52DEF20DDD /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
-		48DA3176A648F26CF7B830D7D9E39F7B /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
-		4B3C11138CB1A5917A8D289FB32C2534 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		4F29369B9CEAC4277E989AE103FE1323 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
-		4FEEA39BA68C3908D8EE1F76CE322999 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		52911D4EAA1392039954661433D3E4B9 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = CountryPickerView/Extensions.swift; sourceTree = "<group>"; };
-		52ADC4F7A8DA93229145336BF2E63B2A /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		53AEB4774ADE0DE9D7A746699DCB24F4 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		29EEAA5B7B36E539F9C988FA6883B07F /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		2D9DF8CA58BB6F4A161A1060DE37CBCE /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		2E9F0BEC77CC650111F882F1CE8B9C6C /* CountryPickerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CountryPickerView.xib; path = CountryPickerView/CountryPickerView.xib; sourceTree = "<group>"; };
+		33D4E5A7318C101EBE92E3729DA91050 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		353CD4AE2F3278E6337C312E56D5EF50 /* NibView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibView.swift; path = CountryPickerView/NibView.swift; sourceTree = "<group>"; };
+		35B8BBC0228CB52D54232AA8E10096BE /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		367378470787183BD1BBB03321BACBD7 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		37ECF7872B5B2BF914F926E688BC5A3D /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		3ADAD2503849FFB452BA3F2AC53FECAD /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		3B80BA0D0D8DAE4AFF94DFE1DF0947D1 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		3E489CB1C2AD0FFC5CD67AD5FE999945 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		3F66FD107CCFC780DC3D7AD73C5E5AAA /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		4478D22B2CEDFF1C8FF93D60EC400C7C /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		455A421F2BCD11CA16B48B0F5BE88FB1 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		45AEC75D3370602E69A9020467A6309F /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		5282DED34337BF7D90ADEB066A7BC876 /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		531150B8FC117D237316C19B4AB7508E /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		54F00DBABC04C0FCBD418976019B987F /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		561B90761A15F255203FF3892871ED3E /* CountryPickerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CountryPickerView.xib; path = CountryPickerView/CountryPickerView.xib; sourceTree = "<group>"; };
-		5CD8098E2B436B85968CB73F6D50416D /* CountryPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CountryPickerView.framework; path = CountryPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		568B0710EEDEECF8F4BCD01EC1EF30A4 /* CountryPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CountryPickerView.framework; path = CountryPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0CD335B2FD8A1A62AB16E5B6E1BB53 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		5E10FC3E4D122ACE8D80C480F14A53DA /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		5E3861B2A8B0169F5B0BD2C7FDC8F31D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E65F61C02F60A34C9FB308C1EEB355A /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		5EE19D26827873D368BF92B52594FAE1 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
 		616016B06D00C8EC358A39572E2DDAC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62327A5A6C073ADCDFA5034AFAC704A4 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		6284CD7DCE11BB0DA8E26803E1854196 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		6E048CA6664D444F963D0FFD52FA0EC0 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
-		6E6EF096B6C17F031A2782D915945D94 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		7027F41704CCEACF9E3B1B185C5A0921 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		76BDF5B88E0C839FED65B12CEF5C3E5E /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
-		7D034DF11F68E6FFD4535A2D9522952D /* CountryPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPickerView.swift; path = CountryPickerView/CountryPickerView.swift; sourceTree = "<group>"; };
-		8178B5D30D5FBEE8D32F8EC06994BE35 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		823955569315C1BCD0F3D80F06935930 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		8B221AC6ECE91A1B557DF245A94CE3AF /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B550936DB12AE7D60A1F7CCE7974ABF /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		8E85AA059C6E6094EB46DD749704B9FA /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		8FED57ABF6D70EC7D4BD7B660D0BC0F8 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		632FCB821E9A287DE008F820D80FD381 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		682D3D94E175CBA70118DA71B89ED5B6 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		68BD5D9BCC87318EDF4B435421586E72 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		6995115C2564BC183351F2A5F5E93B74 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		6D58A71E1092820F869CC658D0BF2A93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7103954D99AFDE7A19EF4C4035E8647E /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		72639FFADD1B63EA62AD3C22ABC82F1F /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		729D1C5BC3476A8DFB3E74A850D4FA6B /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
+		73AAF9F181A8A305FE56ECB582409985 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		745220668BD4D473154AA8E3768F2D79 /* ResourceBundle-CountryPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CountryPickerView-Info.plist"; sourceTree = "<group>"; };
+		77C7883EB167FBC0C220E78F8CD67007 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		7820929FDA807D23B90D6C88978C839D /* CountryPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerView-umbrella.h"; sourceTree = "<group>"; };
+		78C6DD4240E054FD7A2124246D90D4E5 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		7B32E2213FC7F211308B818E2D166F5E /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		81320FC9F0F9BD898E921A677E6C926D /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		81C8BC7B4E6284CFEFC076184A2C704F /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		8D6BE251209FD90E2555123FB569F79C /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		9002604269C34A522975B423F69B7E20 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95A491AD1A41D03A56391F70399690B8 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		9858FEF97A5D80381B65410D1E575A8D /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		9FAF3C9F0284F29F50356E4217F06841 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		95C31FEA0AA3A3A19DC4926CA2FA13E2 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		A1DBFFA75B19B6B7726731D14BD8D525 /* Pods-TravelEasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelEasy-umbrella.h"; sourceTree = "<group>"; };
-		A57E6A35DA301157BD7655C01A1AAC73 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		A5C62525DFF456AFCCC94700E8361CD8 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		A7D6359ED973FADEE858C2E6D36A9A3D /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		AEF73B2247F93B845DF7A934CD3497BE /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		B2A20471FF6BA4A9315586FD6EB2C342 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		B3B45881F95647AFC46C4C1AE27D313E /* Pods_TravelEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelEasy.framework; path = "Pods-TravelEasy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B71A445AC6A91E957112BA821092D1AE /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		B8AEDC91518579B17681FCAE4157B7D7 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		BD9E535E6D58313C15FEFBB6F41AE52E /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		C1C1597CD31B68ACD87D5B207E2EA902 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		A2A0C31262749F291EB051C02DE2242E /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		A7C3174100C55D8BAF0BB6F685667192 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
+		A99546C2B35089BCA276465D1FB83BCC /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		A9A028FE90510EA52E9470745ACCE23F /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		AD9858C056022B342034CBA96439585C /* CountryPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPickerViewController.swift; path = CountryPickerView/CountryPickerViewController.swift; sourceTree = "<group>"; };
+		B33F952AE3743AD355382A50BD181639 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		B460FC664C50F2F06025E73A3A124811 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		B6B6DBDE84BE8E722D645131834E16F8 /* CountryPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPickerView.swift; path = CountryPickerView/CountryPickerView.swift; sourceTree = "<group>"; };
+		B7A542A1FF5CE01895378B17D6B6561F /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = CountryPickerView/Extensions.swift; sourceTree = "<group>"; };
+		B8A3BBECFE3743B3E136828047ABBED0 /* CountryPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountryPickerView.xcconfig; sourceTree = "<group>"; };
 		C1FE28472A73DE8A9C40107E3853861B /* Pods-TravelEasy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelEasy-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C24B792C0154E42A693CC3FCF45A6DFB /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
-		CDD0F055869512768512295EFA3120B4 /* CountryPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPickerViewController.swift; path = CountryPickerView/CountryPickerViewController.swift; sourceTree = "<group>"; };
-		CE7EE6E897240B2A5EE97C5E425FCB1F /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = CountryPickerView/Assets/CountryPickerView.bundle/Images; sourceTree = "<group>"; };
-		CEDA182F36E342EE71C05D247D9AC134 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1C4853AE2B5F0766281218E9258D7FD /* CountryPickerView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CountryPickerView.bundle; path = CountryPickerView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3020348CB634D716D11B9BB2D705CA7 /* CountryPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountryPickerView.xcconfig; sourceTree = "<group>"; };
+		C365DE75429F2B074D0ED0A4DBD75B02 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		C3DD7E402BC6F9C8E445325C4410C1D9 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		C4DB050EC18F566C2085325EC5BB2EBE /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		C958E17B80223D7365587FC036F2832E /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		CA28C547FADA301EE12D3058D388C0F7 /* Pods_TravelEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelEasy.framework; path = "Pods-TravelEasy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD160729C6BF59DF748B1EB7B69F2A3 /* CountryPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CountryPickerView.modulemap; sourceTree = "<group>"; };
+		D0012FE67EDDC4D9A880859D39B5B24E /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		D1DB94F02F3B1D7005CCFE152F125A03 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		D20FCA355E94C4EA46C427CC71561A05 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		D4DA187EB42343CD006CB1752754C4E4 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		D8C343D4BE0B826E7585333692C66682 /* Pods-TravelEasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelEasy.debug.xcconfig"; sourceTree = "<group>"; };
-		D92EC5C949D7942DBFC14F77B95BECC1 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		DE046A19C47CC72279EA24275B910588 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1444305AC7C743A355F73A6CF4B22E2 /* Pods-TravelEasy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelEasy-acknowledgements.plist"; sourceTree = "<group>"; };
-		E5F8D913F91D6212370A320EB60B6D20 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		E67FDC6660B5F8C1E85E81C615FCC4F0 /* CountryPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountryPickerView-dummy.m"; sourceTree = "<group>"; };
-		F8612A729D2ADDF755BD6A3A7231BDE5 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		E51DC7BE6B945810CB4378FEECAA824B /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		EA6C6204C03E4F1EE886130BB6B8105A /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFFDAF049AA86A3620C35FF8A76AA35 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		ED365B501C5471F5C72134BDABCAF3B7 /* CountryPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerView-prefix.pch"; sourceTree = "<group>"; };
+		F18D99819439E8C99609DA70BB741E53 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		F234BB9037784EBA8D864CD53F81AB4F /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		F729EE5AB22A24F40739C679936274CA /* Data */ = {isa = PBXFileReference; includeInIndex = 1; name = Data; path = CountryPickerView/Assets/CountryPickerView.bundle/Data; sourceTree = "<group>"; };
 		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7F55C594A2333DA94375EFB163CDA628 /* Frameworks */ = {
+		74E63AFEB5BC4322282DB67F1CC54A1F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				034FBCA3DB5DCA03FA846FD515D0E982 /* Foundation.framework in Frameworks */,
+				ECE4CFE7B36260C12AD656A69E9FCF1C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,20 +231,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4FF60BA94C3143B9B550578A59FF17D /* Frameworks */ = {
+		9F7CDA6E9620199E40E39D586CF7E21E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB55B993FC38387A872CA7A6BC9AF364 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B166704702E137C4A23185F2F0B8C60D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66F7FA7B011C2B905FDAA38FA5BDBBD4 /* Foundation.framework in Frameworks */,
-				02E80AC32A704EFA1D0A8B2610D8EE75 /* QuartzCore.framework in Frameworks */,
+				DA6570497B276A3026AA79BA7CE0EB26 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,74 +247,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6D679829918B48785F00C21FD993A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF424964C9A76CBDED0193268644B13 /* Foundation.framework in Frameworks */,
+				795897C1B94E99CC94567C07F8AC27FF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7BDDE12B111FD9AFE32DE30D49C941D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A3C380CDBF1F9A4AC4B931AA230167 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31C5A382E1A8C821DAB5677603B35FAF /* CountryPickerView */ = {
+		1DCA8E6D5BFE879401A5BFEF9EEE3AAD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7D034DF11F68E6FFD4535A2D9522952D /* CountryPickerView.swift */,
-				561B90761A15F255203FF3892871ED3E /* CountryPickerView.xib */,
-				CDD0F055869512768512295EFA3120B4 /* CountryPickerViewController.swift */,
-				52911D4EAA1392039954661433D3E4B9 /* Extensions.swift */,
-				18F82611B6F4531FC5D51A1FE7DC6F22 /* NibView.swift */,
-				3881DF6E86906A08BE9BC9FFBFA07E90 /* Resources */,
-				44ECE2D40A9BB9F8A6C475FA74EC1DCB /* Support Files */,
+				DE046A19C47CC72279EA24275B910588 /* Info.plist */,
+				C4DB050EC18F566C2085325EC5BB2EBE /* Toast-Swift.modulemap */,
+				A7C3174100C55D8BAF0BB6F685667192 /* Toast-Swift.xcconfig */,
+				81320FC9F0F9BD898E921A677E6C926D /* Toast-Swift-dummy.m */,
+				9002604269C34A522975B423F69B7E20 /* Toast-Swift-prefix.pch */,
+				729D1C5BC3476A8DFB3E74A850D4FA6B /* Toast-Swift-umbrella.h */,
 			);
-			name = CountryPickerView;
-			path = CountryPickerView;
-			sourceTree = "<group>";
-		};
-		3881DF6E86906A08BE9BC9FFBFA07E90 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1636109D786740BE1B48214135290874 /* Data */,
-				CE7EE6E897240B2A5EE97C5E425FCB1F /* Images */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		4108E028C9AB1FD7EC2306BF9FE389C4 /* SnapKit */ = {
-			isa = PBXGroup;
-			children = (
-				8E85AA059C6E6094EB46DD749704B9FA /* Constraint.swift */,
-				823955569315C1BCD0F3D80F06935930 /* ConstraintAttributes.swift */,
-				209E9AC8EF9A07051FC80BB6413C1FB9 /* ConstraintConfig.swift */,
-				9858FEF97A5D80381B65410D1E575A8D /* ConstraintConstantTarget.swift */,
-				48DA3176A648F26CF7B830D7D9E39F7B /* ConstraintDescription.swift */,
-				2D339898D4AA898BD4C741C3CE605EAE /* ConstraintDSL.swift */,
-				2EDE801B331CA15B2057303C4B3AC38C /* ConstraintInsets.swift */,
-				9FAF3C9F0284F29F50356E4217F06841 /* ConstraintInsetTarget.swift */,
-				53AEB4774ADE0DE9D7A746699DCB24F4 /* ConstraintItem.swift */,
-				B8AEDC91518579B17681FCAE4157B7D7 /* ConstraintLayoutGuide.swift */,
-				421F0C347981F57E37BB30B8BD0F50AA /* ConstraintLayoutGuide+Extensions.swift */,
-				6E6EF096B6C17F031A2782D915945D94 /* ConstraintLayoutGuideDSL.swift */,
-				0CEC82C132BE77774C1A8CDFFF43B873 /* ConstraintLayoutSupport.swift */,
-				B2A20471FF6BA4A9315586FD6EB2C342 /* ConstraintLayoutSupportDSL.swift */,
-				088E340EDCF658A9C8016B6D9E3A2F80 /* ConstraintMaker.swift */,
-				4B3C11138CB1A5917A8D289FB32C2534 /* ConstraintMakerEditable.swift */,
-				E5F8D913F91D6212370A320EB60B6D20 /* ConstraintMakerExtendable.swift */,
-				F8612A729D2ADDF755BD6A3A7231BDE5 /* ConstraintMakerFinalizable.swift */,
-				B71A445AC6A91E957112BA821092D1AE /* ConstraintMakerPriortizable.swift */,
-				8FED57ABF6D70EC7D4BD7B660D0BC0F8 /* ConstraintMakerRelatable.swift */,
-				35D341E10F0DC58D8EF6868AFDE36AF5 /* ConstraintMultiplierTarget.swift */,
-				A57E6A35DA301157BD7655C01A1AAC73 /* ConstraintOffsetTarget.swift */,
-				0479926DFA408D886D26873700F96DF3 /* ConstraintPriority.swift */,
-				62327A5A6C073ADCDFA5034AFAC704A4 /* ConstraintPriorityTarget.swift */,
-				A5C62525DFF456AFCCC94700E8361CD8 /* ConstraintRelatableTarget.swift */,
-				AEF73B2247F93B845DF7A934CD3497BE /* ConstraintRelation.swift */,
-				4FEEA39BA68C3908D8EE1F76CE322999 /* ConstraintView.swift */,
-				BD9E535E6D58313C15FEFBB6F41AE52E /* ConstraintView+Extensions.swift */,
-				8B550936DB12AE7D60A1F7CCE7974ABF /* ConstraintViewDSL.swift */,
-				103F903C8E67BB7F34003DD28A93CDA6 /* Debugging.swift */,
-				26D0E97F6A8185A20FB9BD056472086B /* LayoutConstraint.swift */,
-				95A491AD1A41D03A56391F70399690B8 /* LayoutConstraintItem.swift */,
-				4F29369B9CEAC4277E989AE103FE1323 /* Typealiases.swift */,
-				A7D6359ED973FADEE858C2E6D36A9A3D /* UILayoutSupport+Extensions.swift */,
-				774D8E90BEBC5CBD26DE72BEBAC2DE56 /* Support Files */,
-			);
-			name = SnapKit;
-			path = SnapKit;
+			name = "Support Files";
+			path = "../Target Support Files/Toast-Swift";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -295,21 +287,6 @@
 				978007DCB56F415BE390E0F949D4D4E5 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		44ECE2D40A9BB9F8A6C475FA74EC1DCB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2E5D362D1EEFCE61D5117AED61FEEEC6 /* CountryPickerView.modulemap */,
-				D3020348CB634D716D11B9BB2D705CA7 /* CountryPickerView.xcconfig */,
-				E67FDC6660B5F8C1E85E81C615FCC4F0 /* CountryPickerView-dummy.m */,
-				40D686E40BB208BEA46D1699B39153CA /* CountryPickerView-prefix.pch */,
-				3579CBA72613F69DF7B286DE3E57A276 /* CountryPickerView-umbrella.h */,
-				02250C4C5DB2FFE5463A468CE8454E33 /* Info.plist */,
-				232A17A96B331E00502B6D223AC0ACB1 /* ResourceBundle-CountryPickerView-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CountryPickerView";
 			sourceTree = "<group>";
 		};
 		5175AD6EC11D7D68C2C21606B18AC354 /* Pods-TravelEasy */ = {
@@ -330,14 +307,47 @@
 			path = "Target Support Files/Pods-TravelEasy";
 			sourceTree = "<group>";
 		};
-		5F5E2BABF90F453EE75198B70F008C05 /* Toast-Swift */ = {
+		66F80E5A390E2BDF23823F148B2FAE17 /* SnapKit */ = {
 			isa = PBXGroup;
 			children = (
-				2536823327F96D1CF107BD10607CCF5C /* Toast.swift */,
-				EC5550D58362F37D0C4BC9F1574C2C7C /* Support Files */,
+				81C8BC7B4E6284CFEFC076184A2C704F /* Constraint.swift */,
+				29EEAA5B7B36E539F9C988FA6883B07F /* ConstraintAttributes.swift */,
+				E51DC7BE6B945810CB4378FEECAA824B /* ConstraintConfig.swift */,
+				5C0CD335B2FD8A1A62AB16E5B6E1BB53 /* ConstraintConstantTarget.swift */,
+				632FCB821E9A287DE008F820D80FD381 /* ConstraintDescription.swift */,
+				3ADAD2503849FFB452BA3F2AC53FECAD /* ConstraintDSL.swift */,
+				C365DE75429F2B074D0ED0A4DBD75B02 /* ConstraintInsets.swift */,
+				D4DA187EB42343CD006CB1752754C4E4 /* ConstraintInsetTarget.swift */,
+				95C31FEA0AA3A3A19DC4926CA2FA13E2 /* ConstraintItem.swift */,
+				3B80BA0D0D8DAE4AFF94DFE1DF0947D1 /* ConstraintLayoutGuide.swift */,
+				6995115C2564BC183351F2A5F5E93B74 /* ConstraintLayoutGuide+Extensions.swift */,
+				024E96394F47540B3811C7A91CC40215 /* ConstraintLayoutGuideDSL.swift */,
+				78C6DD4240E054FD7A2124246D90D4E5 /* ConstraintLayoutSupport.swift */,
+				7B32E2213FC7F211308B818E2D166F5E /* ConstraintLayoutSupportDSL.swift */,
+				F234BB9037784EBA8D864CD53F81AB4F /* ConstraintMaker.swift */,
+				A9A028FE90510EA52E9470745ACCE23F /* ConstraintMakerEditable.swift */,
+				37ECF7872B5B2BF914F926E688BC5A3D /* ConstraintMakerExtendable.swift */,
+				72639FFADD1B63EA62AD3C22ABC82F1F /* ConstraintMakerFinalizable.swift */,
+				D20FCA355E94C4EA46C427CC71561A05 /* ConstraintMakerPriortizable.swift */,
+				2D9DF8CA58BB6F4A161A1060DE37CBCE /* ConstraintMakerRelatable.swift */,
+				A2A0C31262749F291EB051C02DE2242E /* ConstraintMultiplierTarget.swift */,
+				D0012FE67EDDC4D9A880859D39B5B24E /* ConstraintOffsetTarget.swift */,
+				A99546C2B35089BCA276465D1FB83BCC /* ConstraintPriority.swift */,
+				7103954D99AFDE7A19EF4C4035E8647E /* ConstraintPriorityTarget.swift */,
+				C3DD7E402BC6F9C8E445325C4410C1D9 /* ConstraintRelatableTarget.swift */,
+				08EFD60B1F6E8E6684CAD2465CD8C4D9 /* ConstraintRelation.swift */,
+				45AEC75D3370602E69A9020467A6309F /* ConstraintView.swift */,
+				531150B8FC117D237316C19B4AB7508E /* ConstraintView+Extensions.swift */,
+				B460FC664C50F2F06025E73A3A124811 /* ConstraintViewDSL.swift */,
+				100C14ADB74A1937E261BE9ED3BD314A /* Debugging.swift */,
+				05CFB74C3BD7D637A822941187E41727 /* LayoutConstraint.swift */,
+				77C7883EB167FBC0C220E78F8CD67007 /* LayoutConstraintItem.swift */,
+				F18D99819439E8C99609DA70BB741E53 /* Typealiases.swift */,
+				B33F952AE3743AD355382A50BD181639 /* UILayoutSupport+Extensions.swift */,
+				EA5A25590776B934266D54AB92D08771 /* Support Files */,
 			);
-			name = "Toast-Swift";
-			path = "Toast-Swift";
+			name = SnapKit;
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		6F4ABC118A611659F831136346A49338 /* Targets Support Files */ = {
@@ -348,18 +358,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		774D8E90BEBC5CBD26DE72BEBAC2DE56 /* Support Files */ = {
+		773442458827EA3C2D3C72168B4E1C3E /* CountryPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				CEDA182F36E342EE71C05D247D9AC134 /* Info.plist */,
-				6284CD7DCE11BB0DA8E26803E1854196 /* SnapKit.modulemap */,
-				76BDF5B88E0C839FED65B12CEF5C3E5E /* SnapKit.xcconfig */,
-				7027F41704CCEACF9E3B1B185C5A0921 /* SnapKit-dummy.m */,
-				D92EC5C949D7942DBFC14F77B95BECC1 /* SnapKit-prefix.pch */,
-				8178B5D30D5FBEE8D32F8EC06994BE35 /* SnapKit-umbrella.h */,
+				B6B6DBDE84BE8E722D645131834E16F8 /* CountryPickerView.swift */,
+				2E9F0BEC77CC650111F882F1CE8B9C6C /* CountryPickerView.xib */,
+				AD9858C056022B342034CBA96439585C /* CountryPickerViewController.swift */,
+				B7A542A1FF5CE01895378B17D6B6561F /* Extensions.swift */,
+				353CD4AE2F3278E6337C312E56D5EF50 /* NibView.swift */,
+				888D97489A0EF66C190BDD81ED53F818 /* Resources */,
+				83861DC5129E7C44C47290318CBCEC52 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SnapKit";
+			name = CountryPickerView;
+			path = CountryPickerView;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -367,22 +378,44 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				D625DB42F5FDD5C673D56F53A8872792 /* Pods */,
-				85254EB37617138E349AC825B2FB4C99 /* Products */,
+				E098353BDFD5E2F652681C34FE8FF6CB /* Pods */,
+				DB0BC8FDC09DFB04E8F4F972A917AE0C /* Products */,
 				6F4ABC118A611659F831136346A49338 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		85254EB37617138E349AC825B2FB4C99 /* Products */ = {
+		83861DC5129E7C44C47290318CBCEC52 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D1C4853AE2B5F0766281218E9258D7FD /* CountryPickerView.bundle */,
-				5CD8098E2B436B85968CB73F6D50416D /* CountryPickerView.framework */,
-				B3B45881F95647AFC46C4C1AE27D313E /* Pods_TravelEasy.framework */,
-				8B221AC6ECE91A1B557DF245A94CE3AF /* SnapKit.framework */,
-				52ADC4F7A8DA93229145336BF2E63B2A /* Toast_Swift.framework */,
+				CCD160729C6BF59DF748B1EB7B69F2A3 /* CountryPickerView.modulemap */,
+				B8A3BBECFE3743B3E136828047ABBED0 /* CountryPickerView.xcconfig */,
+				08F9522E9FCF18D1FC25AB96FE39391B /* CountryPickerView-dummy.m */,
+				ED365B501C5471F5C72134BDABCAF3B7 /* CountryPickerView-prefix.pch */,
+				7820929FDA807D23B90D6C88978C839D /* CountryPickerView-umbrella.h */,
+				5E3861B2A8B0169F5B0BD2C7FDC8F31D /* Info.plist */,
+				745220668BD4D473154AA8E3768F2D79 /* ResourceBundle-CountryPickerView-Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/CountryPickerView";
+			sourceTree = "<group>";
+		};
+		888D97489A0EF66C190BDD81ED53F818 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F729EE5AB22A24F40739C679936274CA /* Data */,
+				0110DBD03B5ACD6AE29B6A5DA7AA1229 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8A766687F1B4B5E094C2FAAA9F35C321 /* Toast-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5EE19D26827873D368BF92B52594FAE1 /* Toast.swift */,
+				1DCA8E6D5BFE879401A5BFEF9EEE3AAD /* Support Files */,
+			);
+			name = "Toast-Swift";
+			path = "Toast-Swift";
 			sourceTree = "<group>";
 		};
 		978007DCB56F415BE390E0F949D4D4E5 /* iOS */ = {
@@ -394,46 +427,109 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D625DB42F5FDD5C673D56F53A8872792 /* Pods */ = {
+		BA4DB4A18D4D21B9FAE097D17540952C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				31C5A382E1A8C821DAB5677603B35FAF /* CountryPickerView */,
-				4108E028C9AB1FD7EC2306BF9FE389C4 /* SnapKit */,
-				5F5E2BABF90F453EE75198B70F008C05 /* Toast-Swift */,
+				135725F90A3E94DB9A29F108313CFBC1 /* Info.plist */,
+				EBFFDAF049AA86A3620C35FF8A76AA35 /* TextFieldEffects.modulemap */,
+				33D4E5A7318C101EBE92E3729DA91050 /* TextFieldEffects.xcconfig */,
+				8D6BE251209FD90E2555123FB569F79C /* TextFieldEffects-dummy.m */,
+				1C3551D7C91000FE3634BCC40AC0E3B8 /* TextFieldEffects-prefix.pch */,
+				455A421F2BCD11CA16B48B0F5BE88FB1 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		DB0BC8FDC09DFB04E8F4F972A917AE0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08CB7AAE331B769B13CE25CABCAE34D1 /* CountryPickerView.bundle */,
+				568B0710EEDEECF8F4BCD01EC1EF30A4 /* CountryPickerView.framework */,
+				CA28C547FADA301EE12D3058D388C0F7 /* Pods_TravelEasy.framework */,
+				54F00DBABC04C0FCBD418976019B987F /* SnapKit.framework */,
+				EA6C6204C03E4F1EE886130BB6B8105A /* TextFieldEffects.framework */,
+				5282DED34337BF7D90ADEB066A7BC876 /* Toast_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E098353BDFD5E2F652681C34FE8FF6CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				773442458827EA3C2D3C72168B4E1C3E /* CountryPickerView */,
+				66F80E5A390E2BDF23823F148B2FAE17 /* SnapKit */,
+				E81E53C2C9F55833FC57E46EA0BF268D /* TextFieldEffects */,
+				8A766687F1B4B5E094C2FAAA9F35C321 /* Toast-Swift */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EC5550D58362F37D0C4BC9F1574C2C7C /* Support Files */ = {
+		E81E53C2C9F55833FC57E46EA0BF268D /* TextFieldEffects */ = {
 			isa = PBXGroup;
 			children = (
-				007EF0F8676D805F1101F65366F72BA9 /* Info.plist */,
-				6E048CA6664D444F963D0FFD52FA0EC0 /* Toast-Swift.modulemap */,
-				3A1B3F0BACE7A5F5653E4C23F4DBC7AE /* Toast-Swift.xcconfig */,
-				C1C1597CD31B68ACD87D5B207E2EA902 /* Toast-Swift-dummy.m */,
-				469F2840AEED68FC18D16A52DEF20DDD /* Toast-Swift-prefix.pch */,
-				C24B792C0154E42A693CC3FCF45A6DFB /* Toast-Swift-umbrella.h */,
+				682D3D94E175CBA70118DA71B89ED5B6 /* AkiraTextField.swift */,
+				C958E17B80223D7365587FC036F2832E /* HoshiTextField.swift */,
+				3E489CB1C2AD0FFC5CD67AD5FE999945 /* IsaoTextField.swift */,
+				4478D22B2CEDFF1C8FF93D60EC400C7C /* JiroTextField.swift */,
+				0F13817AB0FDEA1338C8633DA4EBFB91 /* KaedeTextField.swift */,
+				5E65F61C02F60A34C9FB308C1EEB355A /* MadokaTextField.swift */,
+				73AAF9F181A8A305FE56ECB582409985 /* MinoruTextField.swift */,
+				D1DB94F02F3B1D7005CCFE152F125A03 /* TextFieldEffects.swift */,
+				0038503B3C9510992057CA624C3E417C /* YokoTextField.swift */,
+				5E10FC3E4D122ACE8D80C480F14A53DA /* YoshikoTextField.swift */,
+				BA4DB4A18D4D21B9FAE097D17540952C /* Support Files */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		EA5A25590776B934266D54AB92D08771 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D58A71E1092820F869CC658D0BF2A93 /* Info.plist */,
+				35B8BBC0228CB52D54232AA8E10096BE /* SnapKit.modulemap */,
+				3F66FD107CCFC780DC3D7AD73C5E5AAA /* SnapKit.xcconfig */,
+				367378470787183BD1BBB03321BACBD7 /* SnapKit-dummy.m */,
+				68BD5D9BCC87318EDF4B435421586E72 /* SnapKit-prefix.pch */,
+				1DBCE370C876C0D45EEBAC16755C181D /* SnapKit-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Toast-Swift";
+			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A9767B9DA2886C7FB59AE234CB8C1CC1 /* Headers */ = {
+		43C4708B61EB9044A2D4D02CBF43247B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF35765DBD3FF0ED1E9EDC4D4DAD1C2 /* Pods-TravelEasy-umbrella.h in Headers */,
+				5577F2BB85D7B2D0FDD00DD1CA04029A /* Pods-TravelEasy-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9C93BA69962B1199FFFEF86CC3F2288 /* Headers */ = {
+		4948E25155CB58DBB684445A39EEE691 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28EA16E83CA17D0AFE05C44EFE2A931B /* SnapKit-umbrella.h in Headers */,
+				29AE3F4E3EB1AD093EA2BC5D4D877E0C /* Toast-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABD35C3D1B4C9A1A9621A31A737D956 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C452BC8CB84D9931E655A51980F19F5 /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C7342F6BB622322416D4E342C39AEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92D23D536B2D4DE3EEB482AF9D2689E /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,32 +541,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4FC82D42631204113FC971832F1A15C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28AA40D3E4CF486FAEE64C636FAE2624 /* Toast-Swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		040B8E3EBCFA1811FBEA305FEAB63CAA /* Toast-Swift */ = {
+		244B3D889FA07C922C239E47C3D9B61D /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A32074E97C88B1CA224BC16221A41C97 /* Build configuration list for PBXNativeTarget "Toast-Swift" */;
+			buildConfigurationList = 17EA72087332423E5B36041A41112626 /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				02ACC05606F856C2A3B449F50585330D /* Sources */,
-				B166704702E137C4A23185F2F0B8C60D /* Frameworks */,
-				F4FC82D42631204113FC971832F1A15C /* Headers */,
+				41E81C213A24C4CC4EB5B986D5F398BF /* Sources */,
+				9F7CDA6E9620199E40E39D586CF7E21E /* Frameworks */,
+				C7C7342F6BB622322416D4E342C39AEC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Toast-Swift";
-			productName = "Toast-Swift";
-			productReference = 52ADC4F7A8DA93229145336BF2E63B2A /* Toast_Swift.framework */;
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 54F00DBABC04C0FCBD418976019B987F /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2DB892F2F74FDA2D33074A6CA48AACF8 /* CountryPickerView-CountryPickerView */ = {
@@ -487,44 +575,62 @@
 			);
 			name = "CountryPickerView-CountryPickerView";
 			productName = "CountryPickerView-CountryPickerView";
-			productReference = D1C4853AE2B5F0766281218E9258D7FD /* CountryPickerView.bundle */;
+			productReference = 08CB7AAE331B769B13CE25CABCAE34D1 /* CountryPickerView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		3FFD5969B1BF82511F71641538ED5E16 /* Pods-TravelEasy */ = {
+		3FF40C6D09BE664B90523DAB0880130D /* TextFieldEffects */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A94B5A43C7F53A9A4E87F8BF57249C26 /* Build configuration list for PBXNativeTarget "Pods-TravelEasy" */;
+			buildConfigurationList = 33E8346867764207832571F2291B132B /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
 			buildPhases = (
-				8C132687D7A2352D3F5F5FDA6B0110E6 /* Sources */,
-				7F55C594A2333DA94375EFB163CDA628 /* Frameworks */,
-				A9767B9DA2886C7FB59AE234CB8C1CC1 /* Headers */,
+				928F82E8D8C210508792E9DBB83EE03D /* Sources */,
+				74E63AFEB5BC4322282DB67F1CC54A1F /* Frameworks */,
+				BABD35C3D1B4C9A1A9621A31A737D956 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AE89F7AF319A6ED17AEA0DE2343C5720 /* PBXTargetDependency */,
-				36B4E5AF41750797B41639038E29091A /* PBXTargetDependency */,
-				B07F6F0A3961DE8225F478F4DD44795E /* PBXTargetDependency */,
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = EA6C6204C03E4F1EE886130BB6B8105A /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9456460B406ADBEAE721AEEC76C512D0 /* Pods-TravelEasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF45E8D5D4217A82D411FFB270925D0 /* Build configuration list for PBXNativeTarget "Pods-TravelEasy" */;
+			buildPhases = (
+				49CD4A2287EB3547F62D9B9E1AD9E9AC /* Sources */,
+				F7BDDE12B111FD9AFE32DE30D49C941D /* Frameworks */,
+				43C4708B61EB9044A2D4D02CBF43247B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22067C7D9B435DCC160DF6810EAA6636 /* PBXTargetDependency */,
+				8344855CE1615867F4A70409665A8829 /* PBXTargetDependency */,
+				807453984D5CC8700F22F1610F6990ED /* PBXTargetDependency */,
+				16879DF28F6CF916DC9B7683B28BA7C2 /* PBXTargetDependency */,
 			);
 			name = "Pods-TravelEasy";
 			productName = "Pods-TravelEasy";
-			productReference = B3B45881F95647AFC46C4C1AE27D313E /* Pods_TravelEasy.framework */;
+			productReference = CA28C547FADA301EE12D3058D388C0F7 /* Pods_TravelEasy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C0B5FE11CEBD97B200CF3EB4EAE1AE2C /* SnapKit */ = {
+		C66DE895EA2460B54BDA01F585D05171 /* Toast-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DE5D77DB674AE97546258D6AF791B4C /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildConfigurationList = B7B1E511CF181B60E94EA25009BE7010 /* Build configuration list for PBXNativeTarget "Toast-Swift" */;
 			buildPhases = (
-				F3723663D08C20BA2D2148986A0857D3 /* Sources */,
-				A4FF60BA94C3143B9B550578A59FF17D /* Frameworks */,
-				B9C93BA69962B1199FFFEF86CC3F2288 /* Headers */,
+				F7FEF9965A3320F1020307D7B9092309 /* Sources */,
+				D6D679829918B48785F00C21FD993A7F /* Frameworks */,
+				4948E25155CB58DBB684445A39EEE691 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SnapKit;
-			productName = SnapKit;
-			productReference = 8B221AC6ECE91A1B557DF245A94CE3AF /* SnapKit.framework */;
+			name = "Toast-Swift";
+			productName = "Toast-Swift";
+			productReference = 5282DED34337BF7D90ADEB066A7BC876 /* Toast_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EE19F66CCC5A08D04AA4B1F58199A626 /* CountryPickerView */ = {
@@ -543,7 +649,7 @@
 			);
 			name = CountryPickerView;
 			productName = CountryPickerView;
-			productReference = 5CD8098E2B436B85968CB73F6D50416D /* CountryPickerView.framework */;
+			productReference = 568B0710EEDEECF8F4BCD01EC1EF30A4 /* CountryPickerView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -563,15 +669,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 85254EB37617138E349AC825B2FB4C99 /* Products */;
+			productRefGroup = DB0BC8FDC09DFB04E8F4F972A917AE0C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EE19F66CCC5A08D04AA4B1F58199A626 /* CountryPickerView */,
 				2DB892F2F74FDA2D33074A6CA48AACF8 /* CountryPickerView-CountryPickerView */,
-				3FFD5969B1BF82511F71641538ED5E16 /* Pods-TravelEasy */,
-				C0B5FE11CEBD97B200CF3EB4EAE1AE2C /* SnapKit */,
-				040B8E3EBCFA1811FBEA305FEAB63CAA /* Toast-Swift */,
+				9456460B406ADBEAE721AEEC76C512D0 /* Pods-TravelEasy */,
+				244B3D889FA07C922C239E47C3D9B61D /* SnapKit */,
+				3FF40C6D09BE664B90523DAB0880130D /* TextFieldEffects */,
+				C66DE895EA2460B54BDA01F585D05171 /* Toast-Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -581,7 +688,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF82C88E3014A214BE08B4659EBA06A5 /* CountryPickerView.bundle in Resources */,
+				FBD4B1CCF70464A5C72237D949267E15 /* CountryPickerView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,15 +704,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02ACC05606F856C2A3B449F50585330D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A73B71D811A34BA1F57A956A1A940BFE /* Toast-Swift-dummy.m in Sources */,
-				93AADBBA87C3AFBEF7A03C1B9D5FC434 /* Toast.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3F4CAC4846BD54785B47C9302D937536 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -613,11 +711,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C132687D7A2352D3F5F5FDA6B0110E6 /* Sources */ = {
+		41E81C213A24C4CC4EB5B986D5F398BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8FA6CB5DA544DE7CA4E6F38AA6D3C77 /* Pods-TravelEasy-dummy.m in Sources */,
+				42F45540DC199852BAB95343436B3337 /* Constraint.swift in Sources */,
+				7B649537E24F74B17185A1F44FC39DCD /* ConstraintAttributes.swift in Sources */,
+				70BB1250DB0C9B82C178F2321335779C /* ConstraintConfig.swift in Sources */,
+				74ACC4A7EC72542A67CC85919864EB2E /* ConstraintConstantTarget.swift in Sources */,
+				8C4CBB3D0CF0B2A84B6D662C3E405A73 /* ConstraintDescription.swift in Sources */,
+				A39537F273A8222F4E6C4DD89CD805BF /* ConstraintDSL.swift in Sources */,
+				3358FE65623B759877DA564287A1FF74 /* ConstraintInsets.swift in Sources */,
+				9C79BD52DCFC3B65FCB131A01A22C8FA /* ConstraintInsetTarget.swift in Sources */,
+				55FE4D67E52C7EC3F169548A1AF8083E /* ConstraintItem.swift in Sources */,
+				17DC259E711708242DE90511CE1975F0 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				4C11BD7AFEB8CF5D75DFD3E853A7A9D3 /* ConstraintLayoutGuide.swift in Sources */,
+				58C1DA764B0EDEE8823943A7C41DB75B /* ConstraintLayoutGuideDSL.swift in Sources */,
+				0369A5FE37FAE4E7E45CB54BB81D1514 /* ConstraintLayoutSupport.swift in Sources */,
+				4BFBCE0408E88ADE233A429DD3FDD004 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				973B2844EC1D22CC3722D7F21E000C49 /* ConstraintMaker.swift in Sources */,
+				F4A14CE172E882153532350CA5EE0694 /* ConstraintMakerEditable.swift in Sources */,
+				7648882A45D670C33F0BB70774849F27 /* ConstraintMakerExtendable.swift in Sources */,
+				42826CBF9E7AF37C66B9AE3ABF1A0711 /* ConstraintMakerFinalizable.swift in Sources */,
+				0B444A824225426EDC12E26D3C4FD133 /* ConstraintMakerPriortizable.swift in Sources */,
+				77DAEFF2E83AA6F62253CFBD83160E3A /* ConstraintMakerRelatable.swift in Sources */,
+				67AFA08000D8CB1C1680C7BB3174B6EA /* ConstraintMultiplierTarget.swift in Sources */,
+				62671DCA8DE36EB1D8B0C19B6760C319 /* ConstraintOffsetTarget.swift in Sources */,
+				6BB36684E8AD12E34C6CD24FDC87B06A /* ConstraintPriority.swift in Sources */,
+				A33218D49FB9285A6B226210D827264E /* ConstraintPriorityTarget.swift in Sources */,
+				0311E5F8AABEB7B5550F3F24B7D72F48 /* ConstraintRelatableTarget.swift in Sources */,
+				DB8A39DDE8E68BF3DA70BEA9E13AB046 /* ConstraintRelation.swift in Sources */,
+				9ABDFC3BF5546282ABCD9F6FF197A6C7 /* ConstraintView+Extensions.swift in Sources */,
+				FD8E7D6D5781F58F5348A1425AB72342 /* ConstraintView.swift in Sources */,
+				04048AE20991947DE67B0632B1CBCCD4 /* ConstraintViewDSL.swift in Sources */,
+				1168760F142E397761694101E1E9D010 /* Debugging.swift in Sources */,
+				DA9E30F20A5B744B9B172682813794F4 /* LayoutConstraint.swift in Sources */,
+				4CD4BA7A9A7CFF72028A1F765A50085E /* LayoutConstraintItem.swift in Sources */,
+				14AF5546C2EA5E05C55E89EEFCFC3600 /* SnapKit-dummy.m in Sources */,
+				B8EB24CC17A285F0331A254C04B08628 /* Typealiases.swift in Sources */,
+				1D43A16F68E573F8A33795D57038A4FE /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CD4A2287EB3547F62D9B9E1AD9E9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EB8534BA57A46951BD4D94C5DDB12F /* Pods-TravelEasy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928F82E8D8C210508792E9DBB83EE03D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC180BC46E1C47E1EBFF82085ED633C /* AkiraTextField.swift in Sources */,
+				27C431A80F8E5A55E428488D30499E36 /* HoshiTextField.swift in Sources */,
+				EEE4252736CBC1FD55380D106DC76737 /* IsaoTextField.swift in Sources */,
+				24A32419CB2E07735109EB99911596D2 /* JiroTextField.swift in Sources */,
+				224B0755EB50ADD7841404025C044A0B /* KaedeTextField.swift in Sources */,
+				843E85CD16AFE0EF073E47E6DFB273A0 /* MadokaTextField.swift in Sources */,
+				283B8804BFA2F30C39F1DF0426D63A4D /* MinoruTextField.swift in Sources */,
+				93C0985EBFF42A460C787A0AF8AACEEE /* TextFieldEffects-dummy.m in Sources */,
+				D2874D0B356BF10CAACA86B6963EF298 /* TextFieldEffects.swift in Sources */,
+				8D7D57D72E55264B63089B678E3817D9 /* YokoTextField.swift in Sources */,
+				C5876DBABA5F7D36B93C814C538FF833 /* YoshikoTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,68 +792,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3723663D08C20BA2D2148986A0857D3 /* Sources */ = {
+		F7FEF9965A3320F1020307D7B9092309 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E50A920ADCE801BBFBEBAE5E16830033 /* Constraint.swift in Sources */,
-				5CFA21B8B84A386A2FBBB26B58B51F9D /* ConstraintAttributes.swift in Sources */,
-				8D0E5A29AFFFC9C3436A879345B719BE /* ConstraintConfig.swift in Sources */,
-				3C72D1A15A23CF4FBF4CDC0EF9189B50 /* ConstraintConstantTarget.swift in Sources */,
-				5ACFAE0E8073FAB09192B3A7DD9B8A51 /* ConstraintDescription.swift in Sources */,
-				AEDF28D825F86A3D92370B2BA7F029D1 /* ConstraintDSL.swift in Sources */,
-				3B29C3C9C110AE5FA9FDE8870476D68A /* ConstraintInsets.swift in Sources */,
-				ED244DF878E4966DAC08C7FC71C865F3 /* ConstraintInsetTarget.swift in Sources */,
-				F1CAB897F92E6F5B72978500031A58DF /* ConstraintItem.swift in Sources */,
-				1BEB36E19946A2A5CE8BD3D9C9BA91E8 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
-				C184118ADE03F5C5AA67DA1A535903AF /* ConstraintLayoutGuide.swift in Sources */,
-				E8ED6560A7E133E2C84F6771B7008AE2 /* ConstraintLayoutGuideDSL.swift in Sources */,
-				A89F23383FCFAAEC8B08EC66FCFBBE64 /* ConstraintLayoutSupport.swift in Sources */,
-				D06C2F5860480319192BE32488FD40BA /* ConstraintLayoutSupportDSL.swift in Sources */,
-				B49FD340FD6FBAE46099B49E310ECDEB /* ConstraintMaker.swift in Sources */,
-				5AC3521F4903EC2375CE7A57E854FA3B /* ConstraintMakerEditable.swift in Sources */,
-				903037E53D91B60B564F31FD73C27E34 /* ConstraintMakerExtendable.swift in Sources */,
-				CB2DFCF381D4F51522C3B32D5C7ECB5A /* ConstraintMakerFinalizable.swift in Sources */,
-				6ACCEA4FA99B3FE4EB74C101C55843AD /* ConstraintMakerPriortizable.swift in Sources */,
-				4D1EA3D4FDF4E6930DF99515971648FB /* ConstraintMakerRelatable.swift in Sources */,
-				5CE59A02D02CE7269CE6B0AE33A4FBB9 /* ConstraintMultiplierTarget.swift in Sources */,
-				8A0C0F09E55CB7DA3825488E2649172C /* ConstraintOffsetTarget.swift in Sources */,
-				610FF1AB3747841C97D7B7EE99C1F0C1 /* ConstraintPriority.swift in Sources */,
-				FB21971798AF1A51C27A5918EA0AF26D /* ConstraintPriorityTarget.swift in Sources */,
-				6FEE6219C6FA3714C996AF2BD4FF3303 /* ConstraintRelatableTarget.swift in Sources */,
-				CECFA1A06449F15E2CBFE081B090C4C6 /* ConstraintRelation.swift in Sources */,
-				368A3AA259BEAE3600423024166123A8 /* ConstraintView+Extensions.swift in Sources */,
-				78C10DD7FEB5D567CA8533C6D056FF7A /* ConstraintView.swift in Sources */,
-				52B7C0252CC03294B101760C62E5F71A /* ConstraintViewDSL.swift in Sources */,
-				AE7A596F4960031AE3AC244A249CCBDD /* Debugging.swift in Sources */,
-				CD4884950EB5639F7677D50C0FC3CAB1 /* LayoutConstraint.swift in Sources */,
-				4581DDF2293F3996D4B8D13DBF5B2BEF /* LayoutConstraintItem.swift in Sources */,
-				F74D64856ED9C74E3165D55224AB12A4 /* SnapKit-dummy.m in Sources */,
-				83E6870EE0C594EC0081558B082F4DC4 /* Typealiases.swift in Sources */,
-				B015D552EF14D44BB26F50E2BA77CA85 /* UILayoutSupport+Extensions.swift in Sources */,
+				7EACE1670BB5AD4321D4D0DF9080E88D /* Toast-Swift-dummy.m in Sources */,
+				8CF91A6E86BFDB712E0093CBC6CBF4EC /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		36B4E5AF41750797B41639038E29091A /* PBXTargetDependency */ = {
+		16879DF28F6CF916DC9B7683B28BA7C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = C0B5FE11CEBD97B200CF3EB4EAE1AE2C /* SnapKit */;
-			targetProxy = 13A9614091F7EDEC98190EE72171435C /* PBXContainerItemProxy */;
+			name = "Toast-Swift";
+			target = C66DE895EA2460B54BDA01F585D05171 /* Toast-Swift */;
+			targetProxy = 9934CF937FA6C08AAB58B558C80CB80F /* PBXContainerItemProxy */;
 		};
-		AE89F7AF319A6ED17AEA0DE2343C5720 /* PBXTargetDependency */ = {
+		22067C7D9B435DCC160DF6810EAA6636 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CountryPickerView;
 			target = EE19F66CCC5A08D04AA4B1F58199A626 /* CountryPickerView */;
-			targetProxy = 4BE37758CCF1A84AF273F8DE992252E6 /* PBXContainerItemProxy */;
+			targetProxy = 65223AC8F0008DBAF79BE494A2B93ACF /* PBXContainerItemProxy */;
 		};
-		B07F6F0A3961DE8225F478F4DD44795E /* PBXTargetDependency */ = {
+		807453984D5CC8700F22F1610F6990ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Toast-Swift";
-			target = 040B8E3EBCFA1811FBEA305FEAB63CAA /* Toast-Swift */;
-			targetProxy = 2E26051FDBA0BC4E7D774A8F962A5E44 /* PBXContainerItemProxy */;
+			name = TextFieldEffects;
+			target = 3FF40C6D09BE664B90523DAB0880130D /* TextFieldEffects */;
+			targetProxy = 3C7FB1A4DE8B9D682DD805B3504F781A /* PBXContainerItemProxy */;
+		};
+		8344855CE1615867F4A70409665A8829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 244B3D889FA07C922C239E47C3D9B61D /* SnapKit */;
+			targetProxy = EBA97BB7187A46F548618D628ED081F4 /* PBXContainerItemProxy */;
 		};
 		E09251AD8DABFF959C0B56457A313D41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -706,106 +837,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1FA4E985B409C01F1785A4898A6C1120 /* Release */ = {
+		0247B5758B2397EF1BD70F794EE2D3CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3020348CB634D716D11B9BB2D705CA7 /* CountryPickerView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CountryPickerView/CountryPickerView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CountryPickerView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CountryPickerView/CountryPickerView.modulemap";
-				PRODUCT_NAME = CountryPickerView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		431659A16DF7EAEAA66F69FCE1C4F1DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3020348CB634D716D11B9BB2D705CA7 /* CountryPickerView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CountryPickerView/CountryPickerView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CountryPickerView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CountryPickerView/CountryPickerView.modulemap";
-				PRODUCT_NAME = CountryPickerView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		46C60A25A1575D0BBC3F901C837BC383 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8C343D4BE0B826E7585333692C66682 /* Pods-TravelEasy.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TravelEasy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.13.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TravelEasy/Pods-TravelEasy.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TravelEasy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5383BDCC4C2299029093C316B8A22160 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A1B3F0BACE7A5F5653E4C23F4DBC7AE /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = A7C3174100C55D8BAF0BB6F685667192 /* Toast-Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -834,9 +868,9 @@
 			};
 			name = Debug;
 		};
-		70E84FBAC6D67DBADC62B2F00ACCD0EF /* Release */ = {
+		11F90BFE340F8C4925813DB4269A7DD2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1602BB3F32457D7C9336BD6B66A6292F /* Pods-TravelEasy.release.xcconfig */;
+			baseConfigurationReference = A7C3174100C55D8BAF0BB6F685667192 /* Toast-Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -847,26 +881,182 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TravelEasy/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TravelEasy/Pods-TravelEasy.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TravelEasy;
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				PRODUCT_NAME = Toast_Swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		1FA4E985B409C01F1785A4898A6C1120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8A3BBECFE3743B3E136828047ABBED0 /* CountryPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountryPickerView/CountryPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountryPickerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CountryPickerView/CountryPickerView.modulemap";
+				PRODUCT_NAME = CountryPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2EC955BB1851D7D94DE7AE34806877E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F66FD107CCFC780DC3D7AD73C5E5AAA /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2FC68311510F10AE1FA76F777CAF0071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D4E5A7318C101EBE92E3729DA91050 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		431659A16DF7EAEAA66F69FCE1C4F1DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8A3BBECFE3743B3E136828047ABBED0 /* CountryPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CountryPickerView/CountryPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CountryPickerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CountryPickerView/CountryPickerView.modulemap";
+				PRODUCT_NAME = CountryPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		622BCD81163952DE648DD7B339D55744 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F66FD107CCFC780DC3D7AD73C5E5AAA /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		75153BB2B43BB14965346766575E1255 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -983,9 +1173,25 @@
 			};
 			name = Debug;
 		};
-		92904A9259677EF4106B1AB4EA798E93 /* Debug */ = {
+		B3F8C440C24198177CF1421B3BAD9DCC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76BDF5B88E0C839FED65B12CEF5C3E5E /* SnapKit.xcconfig */;
+			baseConfigurationReference = B8A3BBECFE3743B3E136828047ABBED0 /* CountryPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CountryPickerView";
+				INFOPLIST_FILE = "Target Support Files/CountryPickerView/ResourceBundle-CountryPickerView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = CountryPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B43E1BC440AE23DD7AE7E241D3E75AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D4E5A7318C101EBE92E3729DA91050 /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -996,13 +1202,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
-				PRODUCT_NAME = SnapKit;
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_NAME = TextFieldEffects;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1014,41 +1220,9 @@
 			};
 			name = Debug;
 		};
-		A4DCCCC4841142DAABCBC5E3E7114EEE /* Release */ = {
+		C818BCA236D5D6001A6160B0EE60B87B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76BDF5B88E0C839FED65B12CEF5C3E5E /* SnapKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B3F8C440C24198177CF1421B3BAD9DCC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3020348CB634D716D11B9BB2D705CA7 /* CountryPickerView.xcconfig */;
+			baseConfigurationReference = B8A3BBECFE3743B3E136828047ABBED0 /* CountryPickerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CountryPickerView";
@@ -1059,12 +1233,46 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DD5EF1EF6A52B6DB9584A494253E12D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C343D4BE0B826E7585333692C66682 /* Pods-TravelEasy.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelEasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelEasy/Pods-TravelEasy.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TravelEasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		C2B84ED3C46B0BFD10D450ED3EEDD897 /* Release */ = {
+		FE67E99358DBA2798F7DB38D2FD3D691 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A1B3F0BACE7A5F5653E4C23F4DBC7AE /* Toast-Swift.xcconfig */;
+			baseConfigurationReference = 1602BB3F32457D7C9336BD6B66A6292F /* Pods-TravelEasy.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1075,44 +1283,39 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelEasy/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
-				PRODUCT_NAME = Toast_Swift;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelEasy/Pods-TravelEasy.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TravelEasy;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C818BCA236D5D6001A6160B0EE60B87B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3020348CB634D716D11B9BB2D705CA7 /* CountryPickerView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CountryPickerView";
-				INFOPLIST_FILE = "Target Support Files/CountryPickerView/ResourceBundle-CountryPickerView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = CountryPickerView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17EA72087332423E5B36041A41112626 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622BCD81163952DE648DD7B339D55744 /* Debug */,
+				2EC955BB1851D7D94DE7AE34806877E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1122,20 +1325,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DE5D77DB674AE97546258D6AF791B4C /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+		33E8346867764207832571F2291B132B /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92904A9259677EF4106B1AB4EA798E93 /* Debug */,
-				A4DCCCC4841142DAABCBC5E3E7114EEE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A32074E97C88B1CA224BC16221A41C97 /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5383BDCC4C2299029093C316B8A22160 /* Debug */,
-				C2B84ED3C46B0BFD10D450ED3EEDD897 /* Release */,
+				B43E1BC440AE23DD7AE7E241D3E75AF1 /* Debug */,
+				2FC68311510F10AE1FA76F777CAF0071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1149,11 +1343,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A94B5A43C7F53A9A4E87F8BF57249C26 /* Build configuration list for PBXNativeTarget "Pods-TravelEasy" */ = {
+		B7B1E511CF181B60E94EA25009BE7010 /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46C60A25A1575D0BBC3F901C837BC383 /* Debug */,
-				70E84FBAC6D67DBADC62B2F00ACCD0EF /* Release */,
+				0247B5758B2397EF1BD70F794EE2D3CD /* Debug */,
+				11F90BFE340F8C4925813DB4269A7DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF45E8D5D4217A82D411FFB270925D0 /* Build configuration list for PBXNativeTarget "Pods-TravelEasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5EF1EF6A52B6DB9584A494253E12D6 /* Debug */,
+				FE67E99358DBA2798F7DB38D2FD3D691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

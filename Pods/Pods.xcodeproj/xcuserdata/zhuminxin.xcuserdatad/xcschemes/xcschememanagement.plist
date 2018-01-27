@@ -24,10 +24,15 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>Toast-Swift.xcscheme</key>
+		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>Toast-Swift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 </dict>

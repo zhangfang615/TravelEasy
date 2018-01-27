@@ -27,24 +27,19 @@ class RegisterPhoneView: UIView {
     {
         
         super.init(frame: frame)
-        self.backgroundColor = UIColor.yellow
         
-        createHasAccountLabel()
+        //createHasAccountLabel()
         
-        createUseEmailLabel()
+        
         
 //        createCountryTextField()
         
         createPhoneNumberTextField()
-        
-        createPwdRegisterTextField()
-        
-        createVerifyPwdRegisterTextField()
-        
         createVerificationTextField()
-        
+        createPwdRegisterTextField()
+        createVerifyPwdRegisterTextField()
+        createUseEmailLabel()
         createRegisterButton()
-        
         createGetVerificationCodeLabel()
 //        creatAreaDropDownMenuButton()
         
@@ -70,19 +65,7 @@ class RegisterPhoneView: UIView {
         self.addSubview(hasAccountLabel)
     }
     
-    func createUseEmailLabel() {
-        useEmailLabel = UILabel()
-        
-        useEmailLabel.text = "邮箱注册"
-        
-        useEmailLabel.frame = CGRect(x: 20, y: 450, width : 80, height: 40)
-        
-        useEmailLabel.textColor = UIColor.blue
-        
-        useEmailLabel.isUserInteractionEnabled = true
-        
-        self.addSubview(useEmailLabel)
-    }
+
     
 //    func createCountryTextField() {
 //        countryTextField = UITextField()
@@ -97,80 +80,104 @@ class RegisterPhoneView: UIView {
     
     func createPhoneNumberTextField() {
         phoneNumberTextField = UITextField()
+        self.addSubview(phoneNumberTextField)
         phoneNumberTextField.placeholder = "电话号码"
         phoneNumberTextField.keyboardType = UIKeyboardType.numberPad
-        phoneNumberTextField.borderStyle = UITextBorderStyle.roundedRect
-        phoneNumberTextField.frame = CGRect(x: 20, y: 200, width: 335, height: 40)
-        phoneNumberTextField.backgroundColor = UIColor.white
         phoneNumberTextField.tag = 0
         phoneNumberTextField.showDoneButtonOnKeyboard()
-        self.addSubview(phoneNumberTextField)
+        phoneNumberTextField.snp.makeConstraints{ (make) -> Void in
+            make.size.equalTo(CGSize(width:380,height:40))
+            make.centerX.equalTo(self)
+            make.centerY.equalTo(200)
+        }
+        phoneNumberTextField.setBottomBorder()
     }
     
     func createVerificationTextField() {
         verificationTextField = UITextField()
+        self.addSubview(verificationTextField)
         verificationTextField.placeholder = "手机验证码"
-        
         verificationTextField.keyboardType = UIKeyboardType.numberPad
-        verificationTextField.borderStyle = UITextBorderStyle.roundedRect
-        verificationTextField.frame = CGRect(x: 20, y: 260, width: 335, height: 40)
-        verificationTextField.backgroundColor = UIColor.white
         verificationTextField.tag = 3
         verificationTextField.isUserInteractionEnabled = false
-        verififyPwdRegisterTextField.rightView = getVerificationCodeLabel
-        verififyPwdRegisterTextField.showDoneButtonOnKeyboard()
-        self.addSubview(verificationTextField)
+        verificationTextField.showDoneButtonOnKeyboard()
+        verificationTextField.snp.makeConstraints{ (make) -> Void in
+            make.size.equalTo(CGSize(width:380,height:40))
+            make.centerX.equalTo(self)
+            make.centerY.equalTo(phoneNumberTextField).offset(60)
+        }
+        verificationTextField.setBottomBorder()
     }
+    
     func createPwdRegisterTextField() {
         pwdRegisterTextField = UITextField()
-        pwdRegisterTextField.borderStyle = UITextBorderStyle.roundedRect
+        self.addSubview(pwdRegisterTextField)
         pwdRegisterTextField.placeholder = "输入密码"
-        
-        pwdRegisterTextField.frame = CGRect(x: 20, y: 320, width: 335, height: 40)
-        
-        pwdRegisterTextField.backgroundColor  = UIColor.white
         pwdRegisterTextField.tag = 1
         pwdRegisterTextField.isSecureTextEntry = true
-        self.addSubview(pwdRegisterTextField)
+        pwdRegisterTextField.snp.makeConstraints{ (make) -> Void in
+            make.size.equalTo(CGSize(width:380,height:40))
+            make.centerX.equalTo(self)
+            make.centerY.equalTo(verificationTextField).offset(60)
+        }
+        pwdRegisterTextField.setBottomBorder()
     }
     
     func createVerifyPwdRegisterTextField() {
         verififyPwdRegisterTextField = UITextField()
-        
+        self.addSubview(verififyPwdRegisterTextField)
         verififyPwdRegisterTextField.placeholder = "再次输入密码"
-        
-        verififyPwdRegisterTextField.frame = CGRect(x: 20, y: 380, width: 335, height: 40)
-        verififyPwdRegisterTextField.borderStyle = UITextBorderStyle.roundedRect
-        verififyPwdRegisterTextField.backgroundColor = UIColor.white
         verififyPwdRegisterTextField.tag = 2
         verififyPwdRegisterTextField.isSecureTextEntry = true
-        self.addSubview(verififyPwdRegisterTextField)
+        verififyPwdRegisterTextField.snp.makeConstraints{ (make) -> Void in
+            make.size.equalTo(CGSize(width:380,height:40))
+            make.centerX.equalTo(self)
+            make.centerY.equalTo(pwdRegisterTextField).offset(60)
+        }
+        verififyPwdRegisterTextField.setBottomBorder()
+        
+    }
+    
+    func createUseEmailLabel() {
+        useEmailLabel = UILabel()
+        self.addSubview(useEmailLabel)
+        useEmailLabel.text = "邮箱注册"
+        useEmailLabel.textColor = UIColor.blue
+        useEmailLabel.isUserInteractionEnabled = true
+        useEmailLabel.snp.makeConstraints{ (make) -> Void in
+            make.size.equalTo(CGSize(width:80,height:40))
+            make.left.equalTo(verififyPwdRegisterTextField)
+            make.centerY.equalTo(verififyPwdRegisterTextField).offset(60)
+        }
     }
     
     func createRegisterButton() {
         registerButton = UIButton()
-        
-        registerButton.setTitle("注册", for:.normal)
-        
-        registerButton.frame = CGRect(x: 20, y: 540, width: 335, height: 40)
-        
-        registerButton.backgroundColor = UIColor.gray
-        
         self.addSubview(registerButton)
+        registerButton.setTitle("注册", for:.normal)
+        registerButton.backgroundColor = UIColor.gray
+        registerButton.layer.cornerRadius = 5
+        registerButton.snp.makeConstraints{ (make) -> Void in
+            make.size.equalTo(CGSize(width:380,height:40))
+            make.left.equalTo(useEmailLabel)
+            make.centerY.equalTo(useEmailLabel).offset(60)
+        }
     }
     
     func createGetVerificationCodeLabel() {
         getVerificationCodeLabel = UILabel()
-        
+        self.addSubview(getVerificationCodeLabel)
         getVerificationCodeLabel.text = "获取验证码"
-        
-        getVerificationCodeLabel.frame = CGRect(x: 264, y: 261, width: 90, height: 38)
-        
         getVerificationCodeLabel.textColor = UIColor.blue
         getVerificationCodeLabel.isUserInteractionEnabled = true
-        self.addSubview(getVerificationCodeLabel)
+        getVerificationCodeLabel.snp.makeConstraints{ (make) -> Void in
+            make.size.equalTo(CGSize(width:90,height:38))
+            make.right.equalTo(phoneNumberTextField)
+            make.centerY.equalTo(phoneNumberTextField).offset(60)
+        }
     }
-
+    
+    
 //    func creatAreaDropDownMenuButton()
     
     /*
@@ -183,19 +190,3 @@ class RegisterPhoneView: UIView {
 
 }
 
-extension UITextField {
-    func showDoneButtonOnKeyboard() {
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(resignFirstResponder))
-        
-        var toolBarItems = [UIBarButtonItem]()
-        toolBarItems.append(flexSpace)
-        toolBarItems.append(doneButton)
-        
-        let doneToolbar = UIToolbar()
-        doneToolbar.items = toolBarItems
-        doneToolbar.sizeToFit()
-        
-        inputAccessoryView = doneToolbar
-    }
-}
