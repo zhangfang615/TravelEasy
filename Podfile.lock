@@ -1,21 +1,39 @@
 PODS:
+  - Alamofire (4.6.0)
   - CountryPickerView (2.0.0)
   - SnapKit (4.0.0)
+<<<<<<< HEAD
   - TextFieldEffects (1.4.0)
+=======
+  - SwiftyJSON (4.0.0)
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
   - Toast-Swift (3.0.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.5)
   - CountryPickerView
   - SnapKit (~> 4.0.0)
+<<<<<<< HEAD
   - TextFieldEffects
+=======
+  - SwiftyJSON
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
   - Toast-Swift (~> 3.0.1)
 
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   CountryPickerView: b45554f32236b1a74a2cd12d14d03985ee1e4663
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+<<<<<<< HEAD
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
 PODFILE CHECKSUM: ac1aa07ce87733e927e86bad6cb93f971213fe24
+=======
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+
+PODFILE CHECKSUM: 4e6e24f747a7ba8f8cdbcf4b68905940a4b91b4f
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
 
 COCOAPODS: 1.4.0

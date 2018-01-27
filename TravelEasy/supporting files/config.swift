@@ -8,4 +8,10 @@
 
 import Foundation
 
+<<<<<<< HEAD
 var isLogin = false
+=======
+var travelEasyUser = TravelEasyUser()
+let urlString = URL(string: "http://127.0.0.1:8000/")
+let urlEmailVerification = "emailVerification"
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0

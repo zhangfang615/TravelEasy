@@ -9,6 +9,16 @@
 import UIKit
 import Toast_Swift
 import CountryPickerView
+<<<<<<< HEAD
+=======
+import Foundation
+import Alamofire
+import SwiftyJSON
+
+protocol ParamsProtocol: NSObjectProtocol{
+    func returnParams(loginNameStr: String, loginPasswordStr: String)
+}
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
 
 class RegisterPhoneViewController: UIViewController {
     
@@ -24,6 +34,8 @@ class RegisterPhoneViewController: UIViewController {
     let verificationCodeLength = 6
     var countdownTimer: Timer?
     var toastStyle = ToastStyle()
+    
+    weak var paramsProtocolDelegate: ParamsProtocol?
     let cp = CountryPickerView(frame: CGRect(x: 0, y: 0, width: 120, height: 30))
     
     func creatToastStyle(){
@@ -84,7 +96,6 @@ class RegisterPhoneViewController: UIViewController {
         
         registerPhoneV.verififyPwdRegisterTextField.addTarget(self, action: #selector(touchTextField(textField:)), for: .touchDown)
         registerPhoneV.verififyPwdRegisterTextField.addTarget(self, action: #selector(textFieldEditingDidEndOnExit(textField:)), for: .editingDidEndOnExit)
-//        registerPhoneV.verififyPwdRegisterTextField.addTarget(slef, action: #selector(verififyPwdRegisterTextFieldDidChange(textFiedl :)), for: .editingChanged)
         
         registerPhoneV.verificationTextField.addTarget(self, action: #selector(touchTextField(textField:)), for: .touchDown)
         registerPhoneV.verificationTextField.addTarget(self, action: #selector(textFieldEditingDidEndOnExit(textField:)), for: .editingDidEndOnExit)
@@ -104,52 +115,22 @@ class RegisterPhoneViewController: UIViewController {
         if((self.registerPhoneV.verificationTextField.text?.count)! > verificationCodeLength){
             let index = self.registerPhoneV.verificationTextField.text?.index((self.registerPhoneV.verificationTextField.text?.startIndex)!, offsetBy:6)
             self.registerPhoneV.verificationTextField.text = self.registerPhoneV.verificationTextField.text?.substring(to: index!)
-            self.view.makeToast("验证码为6位数字", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-                if didTap {
-                    print("completion from tap")
-                } else {
-                    print("completion without tap")
-                }
-            }
+            makeToast(view: self.view, message : "验证码为6位数字", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
         }
     }
     
     @objc func pwdRegisterTextFieldDidChange(textField : UITextField){
         if((self.registerPhoneV.pwdRegisterTextField.text?.count)! < 8 || (self.registerPhoneV.pwdRegisterTextField.text?.count)! > 12){
-            self.view.makeToast("密码长度为8-16位", duration: 1.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-                if didTap {
-                    print("completion from tap")
-                } else {
-                    print("completion without tap")
-                }
-            }
+            makeToast(view: self.view, message : "密码长度为8-16位", duration : 1.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
         }
     }
-//
-//    @objc func verififyPwdRegisterTextFieldDidChange(textFiedl : UITextField){
-//        let PWD : String = self.registerPhoneV.pwdRegisterTextField.text?
-//        let verifyPWD : String = self.registerPhoneV.verififyPwdRegisterTextField.text?
-//        if ( PWD == nil){
-//            self.view.makeToast("密码不能为空", duration: 1.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-//                if didTap {
-//                    print("completion from tap")
-//                } else {
-//                    print("completion without tap")
-//                }
-//            }
-//        }else if(PWD.count < verifyPWD.count){
-//            self.view.makeToast("", duration: 1.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-//                if didTap {
-//                    print("completion from tap")
-//                } else {
-//                    print("completion without tap")
-//                }
-//            }
-//        }
-//    }
     
     @objc func touchTextField(textField: UITextField) {
+<<<<<<< HEAD
 //        textField.becomeFirstResponder()
+=======
+        
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
         if(currentTextField == nil) {
         currentTextField = textField.tag
         } else if (currentTextField != textField.tag){
@@ -276,8 +257,12 @@ class RegisterPhoneViewController: UIViewController {
     
     @objc func getVerificationCodeLabelTap(sender: UITapGestureRecognizer){
         //Todo: phonenumber of email is eligible?
+<<<<<<< HEAD
         //Todo: Generate verification number
         //Todo: send verification code
+=======
+        verificationCode = Optional.none
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
         if(currentTextField != nil){
         if (currentTextField! == 0){
                 self.registerPhoneV.phoneNumberTextField.resignFirstResponder()
@@ -308,13 +293,7 @@ class RegisterPhoneViewController: UIViewController {
         if (usePhoneNumber == true){
             if (self.registerPhoneV.phoneNumberTextField.text?.count == 0 || isValidPhoneNumber(phoneNumberStr: self.cp.selectedCountry.phoneCode + self.registerPhoneV.phoneNumberTextField.text!)  == false) {
                 print("\(self.cp.selectedCountry.phoneCode)")
-            self.view.makeToast("请输入有效电话号码", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-                if didTap {
-                    print("completion from tap")
-                } else {
-                    print("completion without tap")
-                }
-            }
+                makeToast(view: self.view, message : "请输入有效电话号码", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
             }
             else {
                 self.registerPhoneV.verificationTextField.isUserInteractionEnabled = true
@@ -323,15 +302,10 @@ class RegisterPhoneViewController: UIViewController {
             }
         }else {
             if (self.registerPhoneV.phoneNumberTextField.text?.count == 0 || isValidEmail(emailStr : self.registerPhoneV.phoneNumberTextField.text!)  == false){
-                self.view.makeToast("请输入有效邮箱", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-                    if didTap {
-                        print("completion from tap")
-                    } else {
-                        print("completion without tap")
-                    }
-                }
+                makeToast(view: self.view, message : "请输入有效邮箱", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
             }
             else {
+<<<<<<< HEAD
                 self.registerPhoneV.verificationTextField.isUserInteractionEnabled = true
                 self.registerPhoneV.verificationTextField.text = Optional.none
                 isCounting = true
@@ -339,8 +313,48 @@ class RegisterPhoneViewController: UIViewController {
             }
     }
     
+=======
+                let emailExistUrl = urlString!.appendingPathComponent("emailExist")
+                let param : Dictionary = ["user_email": registerEmail!] as [String : Any]
+                
+                postAPI(param: param, apiURL: emailExistUrl){
+                    JSONResponse, error in
+                    if error == nil  {
+                        let emailExist = JSONResponse!["emailExist"].int!
+                        if emailExist > 0 {
+                            makeToast(view: self.view, message : "该邮箱已经被注册，请更换邮箱", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : self.toastStyle)
+                        } else{
+                            self.isCounting = true
+                            self.registerPhoneV.verificationTextField.isUserInteractionEnabled = true
+                            self.registerPhoneV.verificationTextField.text = Optional.none
+                            
+                            let emailVerifyUrl = urlString!.appendingPathComponent(urlEmailVerification)
+                            let param: Dictionary = ["user_email":self.registerEmail!] as [String : Any]
+                            postAPI(param : param, apiURL:  emailVerifyUrl) {
+                                JSONResponse, error in
+                                if error == nil {
+                                    let response = JSONResponse!["response"].int!
+                                    if response == 0 {
+                                        self.verificationCode = JSONResponse!["verificationCode"].string!
+                                        print(self.verificationCode!)
+                                    }
+                                    else {
+                                        makeToast(view: self.view, message : "验证码发送失败", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : self.toastStyle)
+                                    }
+                                }else {
+                                    makeToast(view: self.view, message : (error?.localizedDescription)!, duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : self.toastStyle)
+                                }
+                            }
+                        }
+                    }else {
+                        makeToast(view: self.view, message : (error?.localizedDescription)!, duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : self.toastStyle)
+                    }
+                }
+            }
+            }
+    }
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
 
-    
     @objc func register(button : UIButton){
         let phoneNumber = self.registerPhoneV.phoneNumberTextField.text
         let verificationStr = self.registerPhoneV.verificationTextField.text
@@ -349,41 +363,18 @@ class RegisterPhoneViewController: UIViewController {
         print("\(self.cp.selectedCountry.name)")
         print("\(self.cp.selectedCountry.phoneCode)")
         if (usePhoneNumber == true && (phoneNumber?.count == 0 || !isValidPhoneNumber(phoneNumberStr: phoneNumber!))){
-                self.view.makeToast("请输入有效电话号码", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-                    if didTap {
-                        print("completion from tap")
-                    } else {
-                        print("completion without tap")
-                    }
-                }
+                makeToast(view: self.view, message : "请输入有效电话号码", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
         }
         else if (usePhoneNumber == false && (phoneNumber?.count == 0 || !isValidEmail(emailStr: phoneNumber!))){
-            self.view.makeToast("请输入有效邮箱", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-                if didTap {
-                    print("completion from tap")
-                } else {
-                    print("completion without tap")
-                }
-            }
+            makeToast(view: self.view, message : "请输入有效邮箱", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
         }
         else if (verificationStr?.count != 6){
-            self.view.makeToast("请输入有效验证码", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-                if didTap {
-                    print("completion from tap")
-                } else {
-                    print("completion without tap")
-                }
-            }
+            makeToast(view: self.view, message : "请输入有效验证码", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
         }
         else if( (passwordStr?.count)! < 8 || (passwordStr?.count)! > 16){
-            self.view.makeToast("请输入有效密码", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
-                if didTap {
-                    print("completion from tap")
-                } else {
-                    print("completion without tap")
-                }
-            }
+            makeToast(view: self.view, message : "请输入有效密码", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
         }else if (passwordStr != verifyPWD){
+<<<<<<< HEAD
             self.view.makeToast("密码输入不一致", duration: 2.0, point: CGPoint(x: 200.0, y: 200.0), title: "提示", image: UIImage(named: "toast.png"), style: toastStyle){ didTap in
                 if didTap {
                     print("completion from tap")
@@ -393,6 +384,36 @@ class RegisterPhoneViewController: UIViewController {
             }
         }else{
             print("Register")
+=======
+            makeToast(view: self.view, message : "两次密码输入不一致", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
+        }else if (verificationNumber! != verificationCode!){
+            makeToast(view: self.view, message : "验证码不正确，请重新输入", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : toastStyle)
+        }
+        else{
+            if(usePhoneNumber == true){
+                let isRegistered = phoneRegister(userPhone: phoneNumber!, registerPassword: passwordStr!)
+            } else{
+                let emailRegisterURL = urlString!.appendingPathComponent("emailRegister")
+                let param : Dictionary = ["user_name":phoneNumber!,"user_password":passwordStr!, "verificationCode" : verificationCode!] as [String : Any]
+                postAPI(param: param, apiURL: emailRegisterURL){
+                    JSONResponse, error in
+                    if error == nil {
+                        let error = JSONResponse!["error"].int!
+                        if error == 0 {
+                            makeToast(view: self.view, message : "成功注册， 返回登录页面", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : self.toastStyle)
+                            if self.paramsProtocolDelegate != nil {
+                                self.paramsProtocolDelegate?.returnParams(loginNameStr: phoneNumber!, loginPasswordStr: passwordStr!)
+                            }
+                            self.navigationController?.popViewController(animated: true)
+                        }else {
+                            makeToast(view: self.view, message : "注册失败\(error)", duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : self.toastStyle)
+                        }
+                    }else {
+                        makeToast(view: self.view, message : (error?.localizedDescription)!, duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : self.toastStyle)
+                    }
+                }
+            }
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
         }
     }
     override func didReceiveMemoryWarning() {
@@ -418,6 +439,30 @@ class RegisterPhoneViewController: UIViewController {
         }
     }
 
+<<<<<<< HEAD
+=======
+        let request = NSMutableURLRequest(url:urlString!.appendingPathComponent("phoneRegister"))
+        let body = "user_name=\(userPhone)&user_password=\(registerPassword)"
+        //编码POST数据
+        let postData = body.data(using: String.Encoding.utf8)
+        //保用 POST 提交
+        request.httpMethod = "POST"
+        request.httpBody = postData
+        
+        //响应对象
+//        var response:URLResponse?
+        var response: AutoreleasingUnsafeMutablePointer<URLResponse?>? = nil
+        do{
+            //发出请求
+            let data = try NSURLConnection.sendSynchronousRequest(request as URLRequest, returning: response)
+            return "registered"
+        }catch let error as NSError{
+//            //打印错误消息
+//            print(error.code)
+            return error.description
+        }
+    }
+>>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
 }
 
 
