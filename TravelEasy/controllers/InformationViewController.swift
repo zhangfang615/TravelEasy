@@ -7,16 +7,21 @@
 //
 
 import UIKit
+import Toast_Swift
+
 class InformationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
+    
     var tableView = UITableView()
+    var isLogin = travelEasyUser.isLogin
     private static let cellIdentifier = "Information"
+    var toastStyle = ToastStyle()
+    
     var section1 = ["我的钱包","我的行程","发起行程"]
     var section2 = ["好友列表","我的动态","我的心愿", "我的评分/评论"]
     var section3 = ["我的日历","设置","申请成为导游"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view, typically from a nib.
         
         tableView = UITableView(frame: self.view.bounds, style: UITableViewStyle.plain)
@@ -33,7 +38,28 @@ class InformationViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.reloadData()
+        if let userID = travelEasyUser.getUserId(), let token = travelEasyUser.getToken(){
+            let tokenCheckURL = urlString!.appendingPathComponent("tokenCheck")
+            let param : Dictionary = ["user_id": userID, "token" : token] as [String : Any]
+            postAPI(param: param, apiURL: tokenCheckURL){
+                JSONResponse, error in
+                if error == nil {
+                    let isChecked = JSONResponse!["isChecked"].string!
+                    print("ischeck \(isChecked)")
+                    if isChecked == "True"{
+                        travelEasyUser.isLogin = true
+                        self.isLogin = travelEasyUser.isLogin
+                    }
+                }else {
+                    makeToast(view: self.view, message : (error?.localizedDescription)!, duration : 2.0, point : CGPoint(x: 200.0, y: 200.0), title : "提示", image : UIImage(named: "toast.png"), style : self.toastStyle)
+                }
+                self.tableView.reloadData()
+            }
+        }else {
+            self.isLogin = false;
+            self.tableView.reloadData()
+        }
+        
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 4
