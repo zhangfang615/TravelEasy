@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class UserLoginViewController: UIViewController {
     
     var codeV = LoginView()
@@ -16,16 +17,19 @@ class UserLoginViewController: UIViewController {
         super.viewDidLoad()
         self.title = "登录"
         self.view.backgroundColor = UIColor.white
-        codeV = LoginView(frame: CGRect( x:0,y:0,width:375,height:667))
-        codeV.nameTextfiled.delegate = self as? UITextFieldDelegate
-        codeV.passworkTextfiled.delegate = self as? UITextFieldDelegate
+        codeV = LoginView(frame: CGRect( x:0,y:0,width:self.view.frame.width,height:self.view.frame.height))
+        codeV.nameTextField.delegate = self as? UITextFieldDelegate
+        codeV.passwordTextField.delegate = self as? UITextFieldDelegate
         codeV.loginButton.addTarget(self, action: #selector(loginEvent), for: .touchUpInside)
-        
         codeV.register.addTarget(self, action: #selector(registerEvent(textFd:)), for: .touchUpInside)
-        
         self.view.addSubview(codeV)
         // Do any additional setup after loading the view.
-    }
+        /*codeV.translatesAutoresizingMaskIntoConstraints = false
+        codeV.topAnchor.constraint(equalTo:self.view.topAnchor).isActive = true
+        codeV.leadingAnchor.constraint(equalTo:self.view.leadingAnchor).isActive = true
+        codeV.trailingAnchor.constraint(equalTo:self.view.trailingAnchor).isActive = true*/
+ 
+ }
     
     @objc func loginEvent () {
         self.navigationController?.popViewController(animated: true)
@@ -42,6 +46,7 @@ class UserLoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
     /*
     // MARK: - Navigation
@@ -54,3 +59,5 @@ class UserLoginViewController: UIViewController {
     */
 
 }
+
+

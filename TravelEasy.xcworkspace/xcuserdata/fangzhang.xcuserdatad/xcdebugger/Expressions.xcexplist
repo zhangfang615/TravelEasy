@@ -33,16 +33,7 @@
          contextName = "RegisterPhoneViewController.register(button:):RegisterPhoneViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "verificationNumber">
-            </PersistentString>
-            <PersistentString
                value = "phoneNumber">
-            </PersistentString>
-            <PersistentString
-               value = "verifyPWD">
-            </PersistentString>
-            <PersistentString
-               value = "registerEmail">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

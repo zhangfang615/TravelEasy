@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83016F62F28656FD631DE984 /* Pods_TravelEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32147539514BF478A4DBA9F /* Pods_TravelEasy.framework */; };
+		BD7F4DA920184C2E00B1C65F /* UITextField_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7F4DA820184C2E00B1C65F /* UITextField_Extension.swift */; };
 		C35025E71FFAE0CC00A317C2 /* RegisterPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35025E61FFAE0CC00A317C2 /* RegisterPhoneViewController.swift */; };
 		C35025E91FFAE16100A317C2 /* RegisterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35025E81FFAE16100A317C2 /* RegisterPhoneView.swift */; };
 		C3528F801FF863A800324723 /* TravelEasy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3528F7E1FF863A800324723 /* TravelEasy.xcdatamodeld */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD7F4DA820184C2E00B1C65F /* UITextField_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField_Extension.swift; sourceTree = "<group>"; };
 		C35025E61FFAE0CC00A317C2 /* RegisterPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneViewController.swift; sourceTree = "<group>"; };
 		C35025E81FFAE16100A317C2 /* RegisterPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneView.swift; sourceTree = "<group>"; };
 		C3528F741FF863A800324723 /* TravelEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,14 @@
 				D32147539514BF478A4DBA9F /* Pods_TravelEasy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD7F4DA720184BD700B1C65F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BD7F4DA820184C2E00B1C65F /* UITextField_Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C3528F6B1FF863A800324723 = {
@@ -223,6 +233,7 @@
 			children = (
 				C37642871FFADAC200329152 /* UserRegisterViews */,
 				C37642831FF9E55600329152 /* UserLoginViews */,
+				BD7F4DA720184BD700B1C65F /* Extension */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -448,12 +459,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelEasy/Pods-TravelEasy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +491,7 @@
 				C3528FC91FF8668F00324723 /* MyCommentsViewController.swift in Sources */,
 				C3528FB11FF8640D00324723 /* SearchViewController.swift in Sources */,
 				C3528FB21FF8640D00324723 /* MessageViewController.swift in Sources */,
+				BD7F4DA920184C2E00B1C65F /* UITextField_Extension.swift in Sources */,
 				C3528FBA1FF8668700324723 /* eWalletViewController.swift in Sources */,
 				C3528FD91FF8A71A00324723 /* UserLoginViewController.swift in Sources */,
 				C35025E91FFAE16100A317C2 /* RegisterPhoneView.swift in Sources */,
