@@ -17,9 +17,6 @@ class LoginView: UIView {
     var loginButton:UIButton!
     var register : UIButton!
     
-<<<<<<< HEAD
-    override init(frame : CGRect) {
-=======
     var rememberSwitch : UISwitch!
     
     var remeberLabel : UILabel!
@@ -29,29 +26,24 @@ class LoginView: UIView {
     override init(frame : CGRect)
         
     {
-        
->>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
         super.init(frame: frame)
         createNameTextField()
         createPasswordTextField()
         creatLoginBtn()
         creatRegisterBtn()
-<<<<<<< HEAD
-=======
         
         createRememberSwitch()
         
         createRememberLabel()
         
         createForgetUserLabel()
->>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
+
     }
     
     required init?(coder aDecoder: NSCoder){
         fatalError("init(coder:) has not been implemented")
     }
     
-<<<<<<< HEAD
     func createNameTextField() {
         nameTextField = UITextField()
         self.addSubview(nameTextField)
@@ -75,46 +67,6 @@ class LoginView: UIView {
             make.centerY.equalTo(nameTextField).offset(60)
         }
         passwordTextField.setBottomBorder()
-=======
-    func creatNameTextfiled()  {
-        
-        nameTextfiled = UITextField()
-        
-        if travelEasyUser.getLoginName() == nil {
-            nameTextfiled.placeholder = "输入邮箱， 电话或者用户名"
-        }else {
-            nameTextfiled.text = travelEasyUser.getLoginName()
-        }
-        
-        nameTextfiled.frame = CGRect(x: 20, y: 200, width: 335, height: 40)
-        
-        nameTextfiled.backgroundColor = UIColor.gray
-        
-        nameTextfiled.tag = 0
-        
-        self.addSubview(nameTextfiled)
-        
-    }
-    
-    func creatPassworkTextfiled()  {
-        
-        
-        
-        passworkTextfiled = UITextField()
-        
-        passworkTextfiled.placeholder = "输入密码"
-        
-        passworkTextfiled.frame = CGRect(x: 20, y: 260, width: 335, height: 40)
-        
-        passworkTextfiled.backgroundColor = UIColor.gray
-        
-        passworkTextfiled.isSecureTextEntry = true
-        
-        passworkTextfiled.tag = 1
-        
-        self.addSubview(passworkTextfiled)
-        
->>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
     }
     
     func creatLoginBtn() {
@@ -143,9 +95,6 @@ class LoginView: UIView {
         }
     }
     
-<<<<<<< HEAD
-    
-=======
     func createRememberSwitch() {
         rememberSwitch = UISwitch()
         
@@ -187,6 +136,6 @@ class LoginView: UIView {
         
         self.addSubview(forgetUserLabel)
     }
->>>>>>> 90388326109ef80605a6a6a9778cd12d1279dbb0
+    
 }
 
